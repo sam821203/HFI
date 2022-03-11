@@ -54,7 +54,6 @@ module.exports = {
         input: "#F0F0F0",
         placeholder: "#C0C0C0",
         gray: {
-          000: "rgba(204,204,204,0)",
           100: "#eeeeee",
           200: "#dddddd",
           300: "#cccccc",
