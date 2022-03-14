@@ -18,6 +18,18 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+// hide info
+function hideInfo() {
+    var x = document.getElementById("myinfo");
+    // var myTarget = e.target;
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 

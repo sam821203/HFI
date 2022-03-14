@@ -38,18 +38,26 @@
 // WIDTHHEIGHT
 @import "utilities/widthHeight";
 // HEADER
-@import "utilities/header";
+@import "utilities/gradient";
 // MARGINPADDING
 @import "utilities/marginPadding";
 // DECO
 @import "utilities/deco";
+// HOVER
+@import "utilities/hover";
+// SHADOW
+@import "utilities/shadow";
 
 /* ==========
   #COMPONENTS
   ========== */
 
-// NAVBAR
+// SWIPER
 @import "components/swiper";
+// BUTTON
+@import "components/button";
+// INPUT
+@import "components/input";
 
 /* ==========
   #LAYOUT

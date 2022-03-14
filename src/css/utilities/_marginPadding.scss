@@ -13,11 +13,19 @@
 }
 
 .section-mb {
-  margin-bottom: 126px;
+  margin-bottom: 100px;
 }
 
 .subtitle-mb {
   margin-bottom: 20px;
+}
+
+// position
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .position-middle {
@@ -25,4 +33,24 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.position-middle-bottom {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.position-description {
+  position: absolute;
+  bottom: 30px;
+  left: 18px;
+}
+
+.position-search {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
 }

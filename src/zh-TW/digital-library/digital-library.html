@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zero waste</title>
+    <link rel="stylesheet" href="../../css/all.css" />
+  </head>
+  <body>
+    <!-- @@include ../include/header.html -->
+    <main>
+      <section
+        style="background-image: url(../../img/digilibrary_bg.jpg)"
+        class="hero-half-img bg-cover w-full h-490 bg-center bg-no-repeat relative mb-35"
+      >
+        <div
+          class="w-full h-full flex flex-col justify-center items-center text-white"
+        >
+          <h1 class="text-shadow mb-3">DIGITAL LIBRARY</h1>
+        </div>
+
+        <div class="mycontainer-220 w-full position-search z-40">
+          <form
+            action=""
+            class="w-full h-20 rounded-full shadow-md lg:flex gap-6"
+          >
+            <div class="w-full">
+              <div class="flex w-full h-full">
+                <input
+                  type="text"
+                  placeholder="Color Name / Material Content / Spec"
+                  name="search"
+                  class="w-5/6 pl-10 h-full text-base border-l-full"
+                />
+                <button
+                  onclick="location.href=''"
+                  type="submit"
+                  class="w-1/6 flex justify-center items-center bg-secondary lg:hover:bg-primaryhover trans200 text-white border-r-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 mr-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                  <h4 class="font-medium">SEARCH</h4>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="mycontainer-220 grid grid-cols-4 gap-14">
+        <div class="col-span-1">
+          <!-- Category -->
+          <form action="">
+            <div class="digi-subtitle mb-5">Category</div>
+            <label class="checkwrap text-base text-bodytext mb-3"
+              >KNIT
+              <input type="checkbox" />
+              <span class="round-check"></span>
+            </label>
+            <label
+              class="checkwrap text-base text-bodytext pb-5 mb-8 border-b border-bdlight"
+              >WOVEN
+              <input type="checkbox" checked="checked" />
+              <span class="round-check"></span>
+            </label>
+
+            <!-- weight -->
+            <div class="digi-subtitle mb-5">Weight</div>
+            <div class="flex items-center mb-5">
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="100"
+                  name="inch"
+                  class="flex-grow px-5 py-2 text-base border border-bdlight"
+                />
+                <span class="mx-1">~</span>
+                <input
+                  type="text"
+                  placeholder="100"
+                  name="inch"
+                  class="flex-grow px-5 py-2 text-base border border-bdlight"
+                />
+                <span class="ml-1">g</span>
+              </div>
+            </div>
+
+            <div class="border-b border-bdlight">
+              <button
+                onclick="location.href=''"
+                type="submit"
+                class="button-b lg:hover:bg-primaryhover trans200 text-white mb-8"
+              >
+                <h5>SEARCH</h5>
+              </button>
+            </div>
+          </form>
+
+          <!-- Subcategories -->
+          <button onclick="hideInfo()">Subcategories</button>
+
+          <div id="myinfo">
+            <label class="checkwrap text-base text-bodytext mb-3"
+              >KNIT
+              <input type="checkbox" />
+              <span class="round-check"></span>
+            </label>
+            <label
+              class="checkwrap text-base text-bodytext pb-5 mb-8 border-b border-bdlight"
+              >WOVEN
+              <input type="checkbox" checked="checked" />
+              <span class="round-check"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="col-span-3 pb-5 border-b border-bdlight">
+          <div class="digi-subtitle mb-5">140 items in total</div>
+          <div>
+            <div>icon</div>
+            <span>CLEAR fILTERS</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @@include ../include/footer.html -->
+    <script src="../../js/vendor.js"></script>
+    <script src="../../js/app.js"></script>
+  </body>
+</html>
