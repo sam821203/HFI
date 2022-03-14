@@ -11701,6 +11701,14 @@ video {
   font-size: 3.75rem;
 }
 
+.text-hero{
+  font-size: 100px;
+}
+
+.text-herosub{
+  font-size: 30px;
+}
+
 .leading-3{
   line-height: .75rem;
 }
@@ -27504,7 +27512,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h5,
@@ -27550,6 +27558,14 @@ h6 {
   height: 190px;
 }
 
+.h-902 {
+  height: 902px;
+}
+
+.max-w-312 {
+  max-width: 312px;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -27557,7 +27573,7 @@ h6 {
   z-index: 999;
   width: 100%;
   height: 400px;
-  padding: 0 1.875rem;
+  padding: 0 50px;
   transition: background-color 0.3s ease;
 }
 
@@ -27569,20 +27585,87 @@ h6 {
   width: 100%;
   height: 200px;
   background-image: linear-gradient(to bottom, #000, transparent);
-  opacity: 0.2;
+  opacity: 0.35;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
-.img-wrap {
-  background-color: red;
-  width: 100px;
-  height: 100px;
+.icon-mr {
+  margin-right: 10px;
+}
+
+.mycontainer-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.mycontainer-220 {
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+.section-mb {
+  margin-bottom: 126px;
+}
+
+.subtitle-mb {
+  margin-bottom: 20px;
+}
+
+.position-middle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+.deco-line-g {
+  width: 50px;
+  height: 1px;
+  background-color: #707070;
+}
+
+.deco-line-w {
+  width: 50px;
+  height: 1px;
+  background-color: white;
 }
 
 /* ==========
   #COMPONENTS
   ========== */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* ==========
   #LAYOUT
@@ -38708,6 +38791,14 @@ h6 {
 
   .sm\:text-6xl{
     font-size: 3.75rem;
+  }
+
+  .sm\:text-hero{
+    font-size: 100px;
+  }
+
+  .sm\:text-herosub{
+    font-size: 30px;
   }
 
   .sm\:leading-3{
@@ -62175,6 +62266,14 @@ h6 {
     font-size: 3.75rem;
   }
 
+  .md\:text-hero{
+    font-size: 100px;
+  }
+
+  .md\:text-herosub{
+    font-size: 30px;
+  }
+
   .md\:leading-3{
     line-height: .75rem;
   }
@@ -85638,6 +85737,14 @@ h6 {
 
   .lg\:text-6xl{
     font-size: 3.75rem;
+  }
+
+  .lg\:text-hero{
+    font-size: 100px;
+  }
+
+  .lg\:text-herosub{
+    font-size: 30px;
   }
 
   .lg\:leading-3{
@@ -109105,6 +109212,14 @@ h6 {
     font-size: 3.75rem;
   }
 
+  .xl\:text-hero{
+    font-size: 100px;
+  }
+
+  .xl\:text-herosub{
+    font-size: 30px;
+  }
+
   .xl\:leading-3{
     line-height: .75rem;
   }
@@ -132568,6 +132683,14 @@ h6 {
 
   .xxl\:text-6xl{
     font-size: 3.75rem;
+  }
+
+  .xxl\:text-hero{
+    font-size: 100px;
+  }
+
+  .xxl\:text-herosub{
+    font-size: 30px;
   }
 
   .xxl\:leading-3{

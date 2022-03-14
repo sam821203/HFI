@@ -29,6 +29,8 @@ module.exports = {
       "4xl": "2.25em",
       "5xl": "2.8125rem",
       "6xl": "3.75rem",
+      hero: "100px",
+      herosub: "30px",
     },
     opacity: {
       0: "0",
