@@ -77,3 +77,9 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+// input text
+input#count {
+  text-align: end;
+  width: 30px;
+}

@@ -17,6 +17,9 @@ module.exports = {
       xl: "1200px",
       xxl: "1400px",
     },
+    fontFamily: {
+      Proxima: ['"Proxima Nova"', "sans-serif"],
+    },
     fontSize: {
       xs: ".75rem",
       sm: ".875rem",

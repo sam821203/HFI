@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zero waste</title>
     <link rel="stylesheet" href="../../css/all.css" />
+    <link type="text/css" rel="stylesheet" href="magicthumb/magicthumb.css" />
   </head>
   <body>
     <!-- @@include ../include/header.html -->
@@ -26,7 +27,7 @@
             class="w-full h-20 rounded-full shadow-md lg:flex gap-6"
           >
             <div class="w-full">
-              <div class="flex w-full h-full">
+              <div class="flex h-full">
                 <input
                   type="text"
                   placeholder="Color Name / Material Content / Spec"
@@ -60,8 +61,8 @@
         </div>
       </section>
 
-      <section class="mycontainer-220 grid grid-cols-4 gap-14">
-        <div class="col-span-1">
+      <section class="mycontainer-220 w-full flex gap-14">
+        <div class="w-1/4">
           <!-- Category -->
           <form action="">
             <div class="digi-subtitle mb-5">Category</div>
@@ -85,14 +86,14 @@
                   type="text"
                   placeholder="100"
                   name="inch"
-                  class="flex-grow px-5 py-2 text-base border border-bdlight"
+                  class="w-1/2 h-8 px-5 py-2 text-base border border-bdlight"
                 />
                 <span class="mx-1">~</span>
                 <input
                   type="text"
-                  placeholder="100"
+                  placeholder="140"
                   name="inch"
-                  class="flex-grow px-5 py-2 text-base border border-bdlight"
+                  class="w-1/2 h-8 px-5 py-2 text-base border border-bdlight"
                 />
                 <span class="ml-1">g</span>
               </div>
@@ -102,7 +103,7 @@
               <button
                 onclick="location.href=''"
                 type="submit"
-                class="button-b lg:hover:bg-primaryhover trans200 text-white mb-8"
+                class="w-full button-b lg:hover:bg-primaryhover trans200 text-white mb-8"
               >
                 <h5>SEARCH</h5>
               </button>
@@ -110,28 +111,143 @@
           </form>
 
           <!-- Subcategories -->
-          <button onclick="hideInfo()">Subcategories</button>
-
-          <div id="myinfo">
-            <label class="checkwrap text-base text-bodytext mb-3"
-              >KNIT
-              <input type="checkbox" />
-              <span class="round-check"></span>
-            </label>
-            <label
-              class="checkwrap text-base text-bodytext pb-5 mb-8 border-b border-bdlight"
-              >WOVEN
-              <input type="checkbox" checked="checked" />
-              <span class="round-check"></span>
-            </label>
-          </div>
+          <button
+            type="button"
+            class="text-lg my-5 trans200"
+            onclick="hideInfo()"
+          >
+            Subcategories
+            <div class="myinfo">
+              <label class="checkwrap text-base text-bodytext mb-3"
+                >KNIT
+                <input type="checkbox" />
+                <span class="round-check"></span>
+              </label>
+              <label class="checkwrap text-base text-bodytext pb-5 mb-8"
+                >WOVEN
+                <input type="checkbox" checked="checked" />
+                <span class="round-check"></span>
+              </label>
+            </div>
+          </button>
         </div>
 
-        <div class="col-span-3 pb-5 border-b border-bdlight">
-          <div class="digi-subtitle mb-5">140 items in total</div>
-          <div>
-            <div>icon</div>
-            <span>CLEAR fILTERS</span>
+        <div class="w-3/4 pb-5">
+          <div class="flex justify-between border-b border-bdlight mb-5">
+            <div class="digi-subtitle mb-5">140 items in total</div>
+            <a href="javascript:;" class="flex justify-center items-start">
+              <div class="w-4 icon-mr">
+                <img
+                  src="../../img/icons/bin.svg"
+                  alt=""
+                  class="logo-contain"
+                />
+              </div>
+              <span>CLEAR FILTERS</span>
+            </a>
+          </div>
+
+          <div class="flex gap-5 mb-6">
+            <div
+              class="h-7.5 flex justify-between items-center bg-white border border-bdlight px-3"
+            >
+              <div class="text-xs font-light leading-5 mr-6">WOVEN</div>
+              <a href="javascript:;">
+                <div class="w-3">
+                  <img
+                    src="../../img/icons/close.svg"
+                    alt=""
+                    class="logo-contain"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="h-7.5 flex justify-between items-center bg-white border border-bdlight px-3"
+            >
+              <div class="text-xs font-light leading-5 mr-6">
+                Weight：100g~104g
+              </div>
+              <a href="javascript:;">
+                <div class="w-3">
+                  <img
+                    src="../../img/icons/close.svg"
+                    alt=""
+                    class="logo-contain"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="h-7.5 flex justify-between items-center bg-white border border-bdlight px-3"
+            >
+              <div class="text-xs font-light leading-5 mr-6">
+                Subcategories-1
+              </div>
+              <a href="javascript:;">
+                <div class="w-3">
+                  <img
+                    src="../../img/icons/close.svg"
+                    alt=""
+                    class="logo-contain"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-6 mb-12">
+            <div class="col-span-1 relative">
+              <div class="w-full">
+                <img
+                  src="../../img/images/item_1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="position-description text-white">
+                <h3 class="mb-3">FX77TNX-2</h3>
+                <h5 class="truncate">POLYESTER 91% SPANDEX</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div class="flex justify-center items-center">
+            <a href="javascript:;" id="minus" class="flex" onclick="minus()">
+              <div class="w-2 icon-mr">
+                <img
+                  src="../../img/icons/arrow_l.svg"
+                  alt=""
+                  class="logo-contain"
+                />
+              </div>
+
+              <h5>PREV</h5>
+            </a>
+
+            <div class="flex justify-center items-center ml-8 mr-14">
+              <input
+                type="text"
+                size="25"
+                value="1"
+                id="count"
+                class="font-Proxima"
+              />
+              <div class="slash-page"></div>
+              <div class="font-Proxima">7</div>
+            </div>
+
+            <a href="javascript:;" id="plus" class="flex" onclick="plus()">
+              <h5 class="icon-mr">NEXT</h5>
+              <div class="w-2 icon-mr">
+                <img
+                  src="../../img/icons/arrow_r.svg"
+                  alt=""
+                  class="logo-contain"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -139,5 +255,6 @@
     <!-- @@include ../include/footer.html -->
     <script src="../../js/vendor.js"></script>
     <script src="../../js/app.js"></script>
+    <script type="text/javascript" src="magicthumb/magicthumb.js"></script>
   </body>
 </html>
