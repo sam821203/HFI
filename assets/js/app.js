@@ -19,18 +19,46 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // hide info
-function hideInfo() {
-    var myButton = document.querySelectorAll("button[type=button]");
-    var myinfo = document.querySelectorAll("div.myinfo");
+// function hideInfo() {
+//   let myButton = document.querySelectorAll("button[type=button]");
+//   let myinfo = document.querySelectorAll("div.myinfo");
 
-    for (var i = 0; i < myinfo.length; i++) {
-        if (myinfo[i].style.display === "none") {
-            myinfo[i].style.display = "block";
-        } else {
-            myinfo[i].style.display = "none";
-        }
+//   for (let i = 0; i < myinfo.length; i++) {
+//     if (myinfo[i].style.display === "none") {
+//       myinfo[i].style.display = "block";
+//     } else {
+//       myinfo[i].style.display = "none";
+//     }
+//   }
+// }
+
+// function hideInfo() {
+//   let myButton = document.querySelectorAll("button[type=button]");
+//   let myinfo = document.querySelectorAll("div.myinfo");
+
+//   for (let i = 0; i < myinfo.length; i++) {
+//     if (myinfo[i].style.display === "none") {
+//       myinfo[i].style.display = "block";
+//       myinfo[i].classList.add("info-fadein");
+//     } else {
+//       myinfo[i].style.display = "none";
+//       myinfo[i].classList.add("info-fadeout");
+//     }
+//   }
+// }
+
+var menuBar = document.querySelector(".menu-bar");
+var menuBarOpen = false;
+
+menuBar.addEventListener("click", function () {
+    if (!menuBarOpen) {
+        menuBar.classList.add("open");
+        menuBarOpen = true;
+    } else {
+        menuBar.classList.remove("open");
+        menuBarOpen = false;
     }
-}
+});
 
 // function hideInfo() {
 //   var x = document.querySelectorAll("div.myinfo");
