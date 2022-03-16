@@ -7,12 +7,53 @@
     <title>login</title>
     <link rel="stylesheet" href="../../css/all.css" />
   </head>
-  <body
-    style="background-image: url(../../img/hero_img.jpg)"
-    class="bg-cover w-full h-screen bg-center bg-no-repeat"
-  >
+  <body>
     <!-- @@include ../include/header.html -->
-    <main></main>
+    <main>
+      <section
+        style="background-image: url(../../img/login_bg.jpg)"
+        class="bg-cover w-full h-screen bg-center bg-no-repeat section-mb fixed"
+      >
+        <div class="mycontainer-220 position-middle z-40 text-white">
+          <div class="text-hero font-medium text-shadow-hero leading-none">
+            Digital Fabric
+          </div>
+          <div class="text-hero-2">Library</div>
+          <p class="text-herosub text-shadow-hero font-light mb-12">
+            To explore the latest products and make free sample inquiry, please
+            log in now.
+          </p>
+
+          <div>
+            <div class="w-full h-full">
+              <div class="w-full email-address">
+                <input
+                  type="email"
+                  placeholder="User *"
+                  class="bg-login rounded w-400 py-3 pl-5 mb-6 text-white placeholder-white border border-white glo-radius"
+                />
+              </div>
+
+              <div class="password">
+                <input
+                  type="password"
+                  placeholder="Password *"
+                  class="bg-login rounded w-400 py-3 pl-5 mb-10 text-white placeholder-white border border-white glo-radius"
+                />
+              </div>
+
+              <a href="../search/search.html" class="w-full">
+                <div
+                  class="w-40 h-12 bg-white py-3 text-center text-primary rounded-full hover:bg-primary hover:text-white trans200"
+                >
+                  LOGIN
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- @@include ../include/footer.html -->
     <script src="../../js/vendor.js"></script>
     <script src="../../js/app.js"></script>
