@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="../../css/all.css" />
+    <link type="text/css" rel="stylesheet" href="magicthumb/magicthumb.css" />
+  </head>
+  <body>
+    <!-- @@include ../include/header.html -->
+    <main>
+      <section
+        style="background-image: url(../../img/contact_bg.jpg)"
+        class="hero-half-img bg-cover w-full h-490 bg-center bg-no-repeat relative mb-35 section-mb"
+      >
+        <div
+          class="w-full h-full flex flex-col justify-center items-center text-white"
+        >
+          <h1 class="text-shadow mb-3">CONTACT US</h1>
+          
+      </section>
+      <section class="section-mb text-center">
+        <h5 class="mb-4">
+          If you have any question or suggestion, please leave the contact
+          information below, we will reply as soon as possible.
+        </h5>
+        <h5 class="mb-8">* Must be filled out</h5>
+      </div>
+
+      <form action="" class="section-mb">
+        <div class="mycontainer-220 grid grid-cols-2 gap-8 mb-14">
+          <div class="col-span-1 h-14 flex items-center">
+            <div class="select w-full h-full">
+              <select class="w-full h-full text-base bg-input" required>
+                <option value="" disabled selected>Subject *</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-span-1 h-14 flex items-center bg-input">
+            <input
+              type="text"
+              placeholder="Name *"
+              name="Name"
+              class="flex-grow px-5 py-2 text-base bg-input"
+            />
+          </div>
+          <div class="col-span-1 h-14 flex items-center bg-input">
+            <input
+              type="text"
+              placeholder="Company"
+              name="Company"
+              class="flex-grow px-5 py-2 text-base bg-input"
+            />
+          </div>
+          <div class="col-span-1 h-14 flex items-center bg-input">
+            <input
+              type="text"
+              placeholder="Telephone *"
+              name="Telephone"
+              class="flex-grow px-5 py-2 text-base bg-input"
+            />
+          </div>
+          <div class="col-span-1 h-14 flex items-center bg-input">
+            <input
+              type="email"
+              placeholder="E-mail *"
+              name="E-mail"
+              class="flex-grow px-5 py-2 text-base bg-input"
+            />
+          </div>
+          <div class="col-span-1 h-14 flex items-center bg-input">
+            <input
+              type="text"
+              placeholder="Address"
+              name="Address"
+              class="flex-grow px-5 py-2 text-base bg-input"
+            />
+          </div>
+
+          <!-- textarea -->
+          <div class="col-span-2">
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Message *"
+              class="w-full px-5 py-3 bg-input"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            onclick="location.href=''"
+            type="submit"
+            class="w-40 button-b lg:hover:bg-primaryhover trans200 text-white mb-8"
+          >
+            <h5>SUBMIT</h5>
+          </button>
+        </div>
+      </form>
+      </section>
+    </main>
+    <!-- @@include ../include/footer.html -->
+    <script src="../../js/vendor.js"></script>
+    <script src="../../js/app.js"></script>
+  </body>
+</html>

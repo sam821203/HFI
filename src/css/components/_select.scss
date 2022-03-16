@@ -1,0 +1,43 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  border: none;
+  cursor: inherit;
+  outline: none;
+  min-width: 30px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+  background-image: linear-gradient(to top, #f0f0f0, #f0f0f0 33%);
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.select::after {
+  content: "";
+  width: 0.75rem;
+  height: 0.45rem;
+  background-color: black;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+select,
+.select:after {
+  grid-area: select;
+}
+
+select:required:invalid {
+  color: #222222;
+}

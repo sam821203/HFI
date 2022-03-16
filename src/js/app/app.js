@@ -82,15 +82,16 @@ menuBar.addEventListener("click", function () {
 // }
 
 // pagination
-
 let count = 1;
 let countPage = document.getElementById("count");
 function plus() {
+  console.log("hi");
   count++;
   countPage.value = count;
 }
 function minus() {
   if (count > 1) {
+    console.log("minus");
     count--;
     countPage.value = count;
   }

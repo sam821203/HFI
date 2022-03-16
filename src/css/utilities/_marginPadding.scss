@@ -12,12 +12,26 @@
   padding-right: 220px;
 }
 
+.mycontainer-m-220 {
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
 .section-mb {
   margin-bottom: 100px;
 }
 
 .subtitle-mb {
   margin-bottom: 20px;
+}
+
+.mt-148 {
+  margin-top: 148px;
+}
+
+// padding
+.p-inquiry {
+  padding: 26px 26px 22px 24px;
 }
 
 // position
@@ -59,4 +73,11 @@
   position: absolute;
   bottom: 20px;
   left: 14px;
+}
+
+.position-arrow-d {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateX(-50%);
 }

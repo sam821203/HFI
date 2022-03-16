@@ -48,6 +48,11 @@ module.exports = {
       90: ".9",
       100: "1",
     },
+    borderColor: {
+      primary: "#003665",
+      secondary: "#C98900",
+      bdlight: "rgba(34,34,34,0.1)",
+    },
     extend: {
       colors: {
         primary: "#003665",
@@ -71,7 +76,9 @@ module.exports = {
         },
       },
       spacing: {
+        1.5: "0.375rem",
         2.5: "0.625rem",
+        7: "1.75rem",
         7.5: "1.875rem",
         12.5: "3.125rem",
         13: "3.25rem",
