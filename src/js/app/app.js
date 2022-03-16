@@ -45,18 +45,47 @@ var swiper = new Swiper(".mySwiper", {
 //   }
 // }
 
-const menuBar = document.querySelector(".menu-bar");
-let menuBarOpen = false;
+// const menuBar = document.querySelector(".menu-bar");
+// let menuBarOpen = false;
 
-menuBar.addEventListener("click", function () {
-  if (!menuBarOpen) {
-    menuBar.classList.add("open");
-    menuBarOpen = true;
-  } else {
-    menuBar.classList.remove("open");
-    menuBarOpen = false;
+// menuBar.addEventListener("click", function () {
+//   if (!menuBarOpen) {
+//     menuBar.classList.add("open");
+//     menuBarOpen = true;
+//   } else {
+//     menuBar.classList.remove("open");
+//     menuBarOpen = false;
+//   }
+// });
+
+// const toggleBtn = document.querySelectorAll(".toggle-cat");
+// let openInfo = false;
+// console.log(toggleBtn);
+// toggleBtn.addEventListener("click", function () {
+//   console.log("hi");
+//   if (!openInfo) {
+//     toggleBtn.classList.add("open");
+//     openInfo = true;
+//   } else {
+//     toggleBtn.classList.remove("open");
+//     openInfo = false;
+//   }
+// });
+
+function hideshow() {
+  let toggleBtn = document.getElementsByClassName(".toggle-cat");
+  let openInfo = false;
+
+  for (let i = 0; i < toggleBtn.length; i++) {
+    if (!openInfo) {
+      toggleBtn.classList.add("open");
+      openInfo = true;
+    } else {
+      toggleBtn.classList.remove("open");
+      openInfo = false;
+    }
   }
-});
+}
 
 // function hideInfo() {
 //   var x = document.querySelectorAll("div.myinfo");
@@ -65,19 +94,6 @@ menuBar.addEventListener("click", function () {
 //     x.style.display = "block";
 //   } else {
 //     x.style.display = "none";
-//   }
-// }
-
-// function checkBorder() {
-//   let checkBorder = document.querySelectorAll("input[name=checkborder]");
-//   let borderBox = document.querySelectorAll("div[name=imgborder]");
-
-//   for (let i = 0; i < checkBorder.length; i++) {
-//     if (checkBorder[i].checked) {
-//       borderBox[i].style.borderColor = "#E55400";
-//     } else {
-//       borderBox[i].style.borderColor = "transparent";
-//     }
 //   }
 // }
 
