@@ -49,17 +49,17 @@
     <main>
       <section
         style="background-image: url(../../img/trend_bg.jpg)"
-        class="hero-img bg-cover w-full h-902 bg-center bg-no-repeat section-mb relative"
+        class="hero-img bg-cover w-full h-onethird md:h-deswhole bg-center bg-no-repeat section-mb relative"
       >
         <div
-          class="mycontainer-50 h-full flex justify-center items-center text-white"
+          class="px-5 lg:px-12.5 h-full flex justify-center items-center text-white"
         >
           <h1 class="text-shadow">TRENDS</h1>
         </div>
 
         <div class="position-middle-bottom w-full z-40">
           <div class="w-full flex justify-center items-center text-white">
-            <a href=""><h3 class="font-medium">Highlight</h3></a>
+            <a href=""><h3 class="font-medium trend-tab">Highlight</h3></a>
             <div class="slash"></div>
             <a href=""><h3 class="font-thin">New Tech</h3></a>
             <div class="slash"></div>
@@ -68,65 +68,83 @@
         </div>
       </section>
 
-      <section class="mycontainer-220 section-mb">
-        <div class="grid grid-cols-3 gap-10">
-          <div class="col-span-1 relative">
-            <div class="position-center">
-              <h3 class="text-white">Zero Waste</h3>
-            </div>
-            <a href="">
-              <div class="w-full">
-                <img
-                  src="../../img/images/pro-1.jpg"
-                  alt=""
-                  class="object-cover object-center w-full h-full"
-                />
+      <section class="px-5 lg:px-desktop section-mb">
+        <!-- hover -->
+        <div class="hidden lg:grid grid-cols-1 xl:grid-cols-3 gap-10 mb-12">
+          <div class="col-span-1">
+            <a href="" class="trend">
+              <div class="text-center">
+                <h3 class="mb-2">Zero waste</h3>
+                <h5 class="mb-5">TREND STORY OF 2022</h5>
+                <div
+                  class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                >
+                  +
+                </div>
               </div>
-            </a>
-          </div>
-          <div class="col-span-1 relative">
-            <div class="position-center">
-              <h3 class="text-white">Zero Waste</h3>
-            </div>
-            <a href="">
-              <div class="w-full">
-                <img
-                  src="../../img/images/pro-1.jpg"
-                  alt=""
-                  class="object-cover object-center w-full h-full"
-                />
-              </div>
-            </a>
-          </div>
-          <div class="col-span-1 relative">
-            <div class="position-center">
-              <h3 class="text-white">Zero Waste</h3>
-            </div>
-            <a href="">
-              <div class="w-full">
-                <img
-                  src="../../img/images/pro-1.jpg"
-                  alt=""
-                  class="object-cover object-center w-full h-full"
-                />
-              </div>
+              <img src="../../img/images/trend_1.jpg" alt="" />
             </a>
           </div>
         </div>
+
+        <!-- <div class="grid grid-cols-3 gap-10">
+          <div class="col-span-1 relative">
+            <div class="position-center">
+              <h3 class="text-white">Zero Waste</h3>
+            </div>
+            <a href="">
+              <div class="w-full">
+                <img
+                  src="../../img/images/pro-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full h-full"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="col-span-1 relative">
+            <div class="position-center">
+              <h3 class="text-white">Zero Waste</h3>
+            </div>
+            <a href="">
+              <div class="w-full">
+                <img
+                  src="../../img/images/pro-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full h-full"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="col-span-1 relative">
+            <div class="position-center">
+              <h3 class="text-white">Zero Waste</h3>
+            </div>
+            <a href="">
+              <div class="w-full">
+                <img
+                  src="../../img/images/pro-1.jpg"
+                  alt=""
+                  class="object-cover object-center w-full h-full"
+                />
+              </div>
+            </a>
+          </div>
+        </div> -->
       </section>
     </main>
 <!-- start footer.html-->
 <footer
-  class="flex justify-between items-center w-full h-148 bg-black px-5 md:px-20 py-4"
+  class="block md:flex justify-between items-center w-full h-60 md:h-footer bg-black px-5 md:px-20 py-6 md:py-4"
 >
-  <div class="flex items-center">
+  <div class="flex items-center pb-8 md:pb-0">
     <div class="text-sm text-white">
       12F, No.420 Fuxing N. Rd.,Taipei 104462 Taiwan<br />TEL:
       +886-2-2501-2598<br />service@hungs.com.tw
     </div>
   </div>
 
-  <div class="flex flex-col items-end">
+  <div class="flex flex-col items-start md:items-end">
     <div class="w-40 mb-3">
       <img src="../../img/images/footer_img.jpg" alt="" class="logo-contain" />
     </div>
