@@ -1,3 +1,85 @@
 .trans200 {
   @apply transition ease-in-out duration-200;
 }
+
+// product grayscale hover
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: 1/1;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  backface-visibility: hidden;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.product::before,
+.product::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product::after {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.76) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0;
+  transition: 300ms opacity linear;
+}
+
+.product > * {
+  z-index: 1;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: filter 200ms ease, transform 250ms linear;
+}
+
+.product h3,
+.product h6 {
+  transform: translateY(120px);
+}
+
+.product h3 {
+  transition: 350ms transform ease;
+}
+
+.product h6 {
+  opacity: 0;
+  transition: 350ms opacity linear, 350ms transform ease-in-out;
+}
+
+.product:hover :is(h3, h6) {
+  transform: none;
+}
+
+.product:hover::after,
+.product:hover::before {
+  opacity: 0.7;
+}
+
+.product:hover h6 {
+  opacity: 1;
+}
+
+.product:hover img {
+  filter: grayscale(0);
+  transform: scale(1.05) rotate(1deg);
+}
