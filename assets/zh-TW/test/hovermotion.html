@@ -45,14 +45,14 @@
         padding: 0;
       }
 
-      .flow > * + * {
+      /* .flow > * + * {
         margin-top: var(--flow-space, 1em);
-      }
+      } */
 
       /* Composition */
-      .team {
+      /* .team {
         --flow-space: 2em;
-      }
+      } */
 
       /* Blocks */
       .item {
@@ -139,15 +139,15 @@
         transition: filter 200ms ease, transform 250ms linear;
       }
 
-      /* .item h2,
+      .item h2,
       .item p {
         transform: translateY(120px);
-      } */
-
-      .item .description {
-        /* transform: translateY(120px); */
-        transition: 350ms opacity linear, 350ms transform ease-in-out;
       }
+
+      /* .item .description {
+        transform: translateY(120px);
+        transition: 350ms opacity linear, 350ms transform ease-in-out;
+      } */
 
       .item h2 {
         font-size: 1.7rem;
@@ -161,11 +161,8 @@
       .item p {
         font-size: 1.2rem;
         font-weight: 500;
-      }
-
-      .item p {
         opacity: 0;
-        /* transition: 350ms opacity linear, 350ms transform ease-in-out; */
+        transition: 350ms opacity linear, 350ms transform ease-in-out;
       }
 
       .item:focus {
@@ -188,7 +185,7 @@
       .item:hover p,
       .item:focus p {
         opacity: 1;
-        transition-delay: 200ms;
+        /* transition-delay: 200ms; */
       }
 
       .item:hover img,
