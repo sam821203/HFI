@@ -13,8 +13,8 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".my-swiper-next",
+        prevEl: ".my-swiper-prev"
     }
 });
 
