@@ -28099,6 +28099,50 @@ input#count {
       transform: translateY(0);
 }
 
+.is-active .list-number {
+  background-color: #566cc5;
+}
+
+.is-active .list-number p {
+  color: #ffffff;
+}
+
+.is-active .list-number:before {
+  opacity: 1;
+}
+
+.is-active .list-arrow {
+  background-image: url(../../images/icon/list_up_icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.list-body {
+  display: none;
+}
+
+.more-product {
+  margin-bottom: 60px;
+  transition: all 250ms ease;
+}
+
+.more-product::after {
+  content: "+";
+  transition: all 250ms ease;
+}
+
+.more-product.is-active {
+  background-color: #003665;
+  color: white;
+  transition: all 250ms ease;
+}
+
+.more-product.is-active::after {
+  content: "-";
+  transition: all 250ms ease;
+}
+
 *::before,
 *::after {
   box-sizing: border-box;

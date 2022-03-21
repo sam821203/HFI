@@ -89,6 +89,17 @@ function hideshow() {
     }
 }
 
+// function openInquiry() {
+//   $(".list-header").on("click", function () {
+//     $(this).toggleClass("is-active");
+//     $(this).siblings(".list-body").slideToggle();
+//   });
+// }
+$(".more-product").on("click", function () {
+    $(this).toggleClass("is-active");
+    $(this).siblings(".list-body").slideToggle();
+});
+
 // function hideInfo() {
 //   var x = document.querySelectorAll("div.myinfo");
 //   console.log(x);
