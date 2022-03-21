@@ -1,44 +1,30 @@
+// toggle cat
+.cat-body {
+  display: none;
+}
+
 .toggle-cat {
-  cursor: pointer;
-  position: relative;
+  transition: all 300ms ease;
 }
 
-.toggle-cat .myinfo {
-  position: absolute;
-  // top: 100px;
-  // right: 96px;
-  opacity: 0;
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
-  -webkit-transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition-timing-function: ease-in-out;
+.toggle-cat::after {
+  content: "+";
+  transition: all 300ms ease;
+  font-size: 22px;
 }
 
-.toggle-cat.open .myinfo {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+.toggle-cat.cat-active {
+  color: rgba(51, 51, 51, 0.6);
+  transition: all 300ms ease;
 }
 
-.is-active {
-  .list-number {
-    background-color: #566cc5;
-    p {
-      color: $white;
-    }
-    &:before {
-      opacity: 1;
-    }
-  }
-  .list-arrow {
-    background-image: url(../../images/icon/list_up_icon.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+.toggle-cat.cat-active::after {
+  content: "-";
+  transition: all 300ms ease;
+  font-size: 26px;
 }
 
+// more product
 .list-body {
   display: none;
 }
@@ -51,6 +37,8 @@
 .more-product::after {
   content: "+";
   transition: all 250ms ease;
+  font-size: 22px;
+  margin-top: 2px;
 }
 
 .more-product.is-active {
@@ -62,4 +50,6 @@
 .more-product.is-active::after {
   content: "-";
   transition: all 250ms ease;
+  font-size: 22px;
+  margin-bottom: 2px;
 }

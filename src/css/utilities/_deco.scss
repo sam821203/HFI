@@ -5,10 +5,49 @@
   background-color: #707070;
 }
 
-.deco-line-w {
-  width: 50px;
+.deco-line-w,
+.deco-line-b {
+  position: relative;
+  width: 40px;
   height: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.deco-line-w {
   background-color: white;
+}
+
+.deco-line-b {
+  background-color: black;
+}
+
+.deco-line-w::before,
+.deco-line-b::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 36px;
+  width: 1px;
+  height: 8px;
+  right: 2px;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-45deg);
+}
+
+.deco-line-w::before {
+  background-color: white;
+}
+
+.learn-more:hover .deco-line-w {
+  width: 75px;
+}
+
+.learn-more:hover .deco-line-w::before {
+  left: 71px;
+}
+
+.learn-more-b:hover .deco-line-b {
+  width: 20px;
 }
 
 .vertical-line-g {

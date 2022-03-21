@@ -18,97 +18,32 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-// hide info
-// function hideInfo() {
-//   let myButton = document.querySelectorAll("button[type=button]");
-//   let myinfo = document.querySelectorAll("div.myinfo");
+// function hideshow() {
+//   let toggleBtn = document.getElementsByClassName(".toggle-cat");
+//   let openInfo = false;
 
-//   for (let i = 0; i < myinfo.length; i++) {
-//     if (myinfo[i].style.display === "none") {
-//       myinfo[i].style.display = "block";
+//   for (let i = 0; i < toggleBtn.length; i++) {
+//     if (!openInfo) {
+//       toggleBtn.classList.add("open");
+//       openInfo = true;
 //     } else {
-//       myinfo[i].style.display = "none";
+//       toggleBtn.classList.remove("open");
+//       openInfo = false;
 //     }
 //   }
 // }
 
-// function hideInfo() {
-//   let myButton = document.querySelectorAll("button[type=button]");
-//   let myinfo = document.querySelectorAll("div.myinfo");
-
-//   for (let i = 0; i < myinfo.length; i++) {
-//     if (myinfo[i].style.display === "none") {
-//       myinfo[i].style.display = "block";
-//       myinfo[i].classList.add("info-fadein");
-//     } else {
-//       myinfo[i].style.display = "none";
-//       myinfo[i].classList.add("info-fadeout");
-//     }
-//   }
-// }
-
-// const menuBar = document.querySelector(".menu-bar");
-// let menuBarOpen = false;
-
-// menuBar.addEventListener("click", function () {
-//   if (!menuBarOpen) {
-//     menuBar.classList.add("open");
-//     menuBarOpen = true;
-//   } else {
-//     menuBar.classList.remove("open");
-//     menuBarOpen = false;
-//   }
-// });
-
-// const toggleBtn = document.querySelectorAll(".toggle-cat");
-// let openInfo = false;
-// console.log(toggleBtn);
-// toggleBtn.addEventListener("click", function () {
-//   console.log("hi");
-//   if (!openInfo) {
-//     toggleBtn.classList.add("open");
-//     openInfo = true;
-//   } else {
-//     toggleBtn.classList.remove("open");
-//     openInfo = false;
-//   }
-// });
-
-function hideshow() {
-    var toggleBtn = document.getElementsByClassName(".toggle-cat");
-    var openInfo = false;
-
-    for (var i = 0; i < toggleBtn.length; i++) {
-        if (!openInfo) {
-            toggleBtn.classList.add("open");
-            openInfo = true;
-        } else {
-            toggleBtn.classList.remove("open");
-            openInfo = false;
-        }
-    }
-}
-
-// function openInquiry() {
-//   $(".list-header").on("click", function () {
-//     $(this).toggleClass("is-active");
-//     $(this).siblings(".list-body").slideToggle();
-//   });
-// }
+// more product toggle
 $(".more-product").on("click", function () {
     $(this).toggleClass("is-active");
     $(this).siblings(".list-body").slideToggle();
 });
 
-// function hideInfo() {
-//   var x = document.querySelectorAll("div.myinfo");
-//   console.log(x);
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
-// }
+// digital library toggle
+$(".toggle-cat").on("click", function () {
+    $(this).toggleClass("cat-active");
+    $(this).siblings(".cat-body").slideToggle();
+});
 
 // pagination
 var count = 1;
@@ -125,6 +60,40 @@ function minus() {
         countPage.value = count;
     }
 }
+
+// Change image on selection
+// var foo = function () {
+//   const imgSrc = $(this).attr("src");
+
+//   $(".movie-stills-carousel .carousel-wrap")
+//     .find("img")
+//     .css("transition", ".4s");
+
+//   $(".movie-stills .hall-screen img").attr("src", imgSrc);
+// };
+
+// $("body").on("click", ".movie-stills-carousel .carousel-wrap li img", foo);
+
+var proColor = function proColor() {
+    console.log("hi");
+    // Get current image source
+    var imgSrc = $(this).attr("src");
+
+    // Apply grayscale to thumbnails except selected
+    $(".movie-stills-carousel .carousel-wrap").find("img").css("filter", "grayscale(1)").css("transition", ".4s");
+    $(this).css("filter", "none");
+
+    // Change image
+    $(".product-hall img").attr("src", imgSrc);
+};
+
+$("body").on("click", ".product-color img", proColor);
+
+// $(".product-color img").click(function () {
+//   console.log("hi");
+//   const imgSrc = $(this).attr("src");
+//   $(".product-hall img").attr("src", imgSrc);
+// });
 
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
