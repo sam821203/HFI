@@ -19,8 +19,11 @@
 
 .trend-tab:hover,
 .trend-tab:active {
-  font-weight: 400;
-  transition: all 0.2s ease;
+  text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .trend-tab:hover.trend-tab::after {

@@ -10,14 +10,15 @@
   </head>
   <body>
 <!-- start header.html-->
-<!-- larger -->
-<header class="hidden md:flex site-header w-full h-full">
+<header class="flex site-header w-full h-full">
   <div class="relative top-0 left-0 flex justify-between w-full z-50">
-    <div class="img-wrap w-logo mr-4">
-      <img src="../../img/logo.png" alt="" class="logo-contain" />
-    </div>
+    <a href="../home/index.html" class="flex items-center">
+      <div class="w-20 md:w-logo mr-4">
+        <img src="../../img/logo.png" alt="" class="logo-contain" />
+      </div>
+    </a>
 
-    <div class="flex items-center">
+    <div class="hidden md:flex items-center">
       <a href="../trend/trend.html">
         <div class="menu-item">
           <h4 class="font-normal text-center">Trends</h4>
@@ -156,7 +157,7 @@
         </div></a
       >
 
-      <a href="">
+      <a href="../home/login.html">
         <div class="w-11 relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -236,22 +237,13 @@
         </div>
       </a>
     </div>
-  </div>
-</header>
 
-<!-- smaller -->
-<header class="flex md:hidden site-header-mob w-full h-full">
-  <div class="relative top-0 left-0 flex justify-between w-full z-50">
-    <div class="w-20 mr-4">
-      <img src="../../img/logo.png" alt="" class="logo-contain" />
-    </div>
-    <div class="menu-bar">
+    <div class="block md:hidden menu-bar">
       <div class="lines">
         <div class="line-1"></div>
         <div class="line-2"></div>
         <div class="line-3"></div>
       </div>
-
 
       <div class="menu-items">
         <div class="mt-20 py-4">
@@ -281,12 +273,14 @@
         </div>
         <div class="py-4">
           <a href="">
-            <h2 class="text-center font-normal border border-white rounded-full py-3">Log In</h2>
+            <h2
+              class="text-center font-normal border border-white rounded-full py-3"
+            >
+              Log In
+            </h2>
           </a>
         </div>
       </div>
-    </div>
-
     </div>
   </div>
 </header>
@@ -308,13 +302,13 @@
         <div class="w-full h-20 border-b border-bdlight">
           <div class="px-0 lg:px-desktop h-full flex items-center">
             <a
-              href=""
+              href="../member/inquirylist.html"
               class="w-1/2 h-full flex justify-center items-center text-lg text-bodytext font-light"
             >
               <div>Inquiry List</div>
             </a>
             <a
-              href=""
+              href="../member/myfavourite.html"
               class="w-1/2 h-full flex justify-center items-center text-lg border-b-6 border-primary"
             >
               <div>My favourite</div>

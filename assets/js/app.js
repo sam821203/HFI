@@ -128,6 +128,10 @@ menuBar.addEventListener("click", function () {
     }
 });
 
+AOS.init({
+    duration: 1200
+});
+
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 

@@ -128,3 +128,7 @@ menuBar.addEventListener("click", function () {
     menuBarOpen = false;
   }
 });
+
+AOS.init({
+  duration: 1200,
+});

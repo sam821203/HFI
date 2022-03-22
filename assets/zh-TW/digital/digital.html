@@ -9,14 +9,15 @@
   </head>
   <body>
 <!-- start header.html-->
-<!-- larger -->
-<header class="hidden md:flex site-header w-full h-full">
+<header class="flex site-header w-full h-full">
   <div class="relative top-0 left-0 flex justify-between w-full z-50">
-    <div class="img-wrap w-logo mr-4">
-      <img src="../../img/logo.png" alt="" class="logo-contain" />
-    </div>
+    <a href="../home/index.html" class="flex items-center">
+      <div class="w-20 md:w-logo mr-4">
+        <img src="../../img/logo.png" alt="" class="logo-contain" />
+      </div>
+    </a>
 
-    <div class="flex items-center">
+    <div class="hidden md:flex items-center">
       <a href="../trend/trend.html">
         <div class="menu-item">
           <h4 class="font-normal text-center">Trends</h4>
@@ -155,7 +156,7 @@
         </div></a
       >
 
-      <a href="">
+      <a href="../home/login.html">
         <div class="w-11 relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -235,22 +236,13 @@
         </div>
       </a>
     </div>
-  </div>
-</header>
 
-<!-- smaller -->
-<header class="flex md:hidden site-header-mob w-full h-full">
-  <div class="relative top-0 left-0 flex justify-between w-full z-50">
-    <div class="w-20 mr-4">
-      <img src="../../img/logo.png" alt="" class="logo-contain" />
-    </div>
-    <div class="menu-bar">
+    <div class="block md:hidden menu-bar">
       <div class="lines">
         <div class="line-1"></div>
         <div class="line-2"></div>
         <div class="line-3"></div>
       </div>
-
 
       <div class="menu-items">
         <div class="mt-20 py-4">
@@ -280,12 +272,14 @@
         </div>
         <div class="py-4">
           <a href="">
-            <h2 class="text-center font-normal border border-white rounded-full py-3">Log In</h2>
+            <h2
+              class="text-center font-normal border border-white rounded-full py-3"
+            >
+              Log In
+            </h2>
           </a>
         </div>
       </div>
-    </div>
-
     </div>
   </div>
 </header>
@@ -431,7 +425,7 @@
 
           <!-- Subcategories -->
           <ul>
-            <li>
+            <li data-aos="fade-up">
               <button
                 class="toggle-cat w-full flex justify-between items-center py-5 border-t border-bdlight"
                 type="button"
@@ -455,7 +449,7 @@
               </div>
             </li>
 
-            <li>
+            <li data-aos="fade-up">
               <button
                 class="toggle-cat w-full flex justify-between items-center py-5 border-t border-bdlight"
                 type="button"
@@ -479,7 +473,7 @@
               </div>
             </li>
 
-            <li>
+            <li data-aos="fade-up">
               <button
                 class="toggle-cat w-full flex justify-between items-center py-5 border-t border-bdlight"
                 type="button"
@@ -503,7 +497,7 @@
               </div>
             </li>
 
-            <li>
+            <li data-aos="fade-up">
               <button
                 class="toggle-cat w-full flex justify-between items-center py-5 border-t border-bdlight"
                 type="button"
@@ -597,8 +591,8 @@
 
           <!-- hover -->
           <div class="hidden md:grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-            <div class="col-span-1">
-              <a href="" class="product product-color">
+            <div class="col-span-1" data-aos="fade-up">
+              <a href="../digital/detail.html" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
                   <h6>POLYESTER91% SPANDEX9%</h6>
@@ -606,7 +600,7 @@
                 <img src="../../img/images/item_1.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -615,7 +609,7 @@
                 <img src="../../img/images/item_2.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -624,7 +618,7 @@
                 <img src="../../img/images/item_3.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -633,7 +627,7 @@
                 <img src="../../img/images/item_4.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -642,7 +636,7 @@
                 <img src="../../img/images/item_5.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -651,7 +645,7 @@
                 <img src="../../img/images/item_6.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -660,7 +654,7 @@
                 <img src="../../img/images/item_7.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -669,7 +663,7 @@
                 <img src="../../img/images/item_8.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -678,7 +672,7 @@
                 <img src="../../img/images/item_9.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -687,7 +681,7 @@
                 <img src="../../img/images/item_10.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
@@ -696,7 +690,7 @@
                 <img src="../../img/images/item_11.jpg" alt="" />
               </a>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1" data-aos="fade-up">
               <a href="" class="product product-color">
                 <div class="description">
                   <h3 class="product-name mb-2">FX77TNX-2</h3>
