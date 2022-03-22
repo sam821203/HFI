@@ -1,13 +1,28 @@
 .trend-tab {
   position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  transition: all 0.2s ease;
 }
+
 .trend-tab::after {
   content: "";
   width: 1px;
-  height: 48px;
+  height: 0px;
   background-color: white;
   position: absolute;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.trend-tab:hover,
+.trend-tab:active {
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.trend-tab:hover.trend-tab::after {
+  height: 48px;
 }
