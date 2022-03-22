@@ -95,6 +95,39 @@ $("body").on("click", ".product-color img", proColor);
 //   $(".product-hall img").attr("src", imgSrc);
 // });
 
+// scroll header
+$(window).on("scroll", function () {
+    var scrollTop = $(this).scrollTop();
+    if (scrollTop > 0) {
+        $(".site-header").addClass("is-active");
+    } else {
+        $(".site-header").removeClass("is-active");
+    }
+});
+
+// $(window).on("scroll", function () {
+//   var scrollTop = $(this).scrollTop();
+//   if (scrollTop > 0) {
+//     $(".site-header-mob").addClass("is-active");
+//   } else {
+//     $(".site-header-mob").removeClass("is-active");
+//   }
+// });
+
+// menu bar
+var menuBar = document.querySelector(".menu-bar");
+var menuBarOpen = false;
+
+menuBar.addEventListener("click", function () {
+    if (!menuBarOpen) {
+        menuBar.classList.add("open");
+        menuBarOpen = true;
+    } else {
+        menuBar.classList.remove("open");
+        menuBarOpen = false;
+    }
+});
+
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 

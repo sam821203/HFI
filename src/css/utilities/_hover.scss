@@ -88,42 +88,18 @@ a.product:hover img {
   transform: scale(1.05) rotate(1deg);
 }
 
-// trend grayscale hover
+// trend hover
 .trend {
   display: flex;
   flex-direction: column;
   justify-content: center;
   aspect-ratio: 1/1;
   position: relative;
-  padding: 1.5rem;
   color: #ffffff;
   backface-visibility: hidden;
   text-decoration: none;
   overflow: hidden;
-}
-
-.trend::before,
-.trend::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.trend::after {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.76) 0,
-    rgba(0, 0, 0, 0) 100%
-  );
-  opacity: 0;
-  transition: 200ms opacity linear;
-}
-
-.trend > * {
-  z-index: 1;
+  transition: all 0.4s ease-in-out;
 }
 
 .trend img {
@@ -137,41 +113,24 @@ a.product:hover img {
   transition: filter 150ms ease, transform 200ms linear;
 }
 
-.trend h3 {
-  transform: translateY(10px);
-  transition: 250ms transform ease;
-}
-
-.trend h5 {
-  transform: translateY(60px);
-}
-
-.trend .plus-icon {
-  transform: translateY(120px);
-}
-
+.trend h3,
 .trend h5,
 .trend .plus-icon {
   opacity: 0;
   transition: 250ms opacity linear, 250ms transform ease-in-out;
+}
+.trend:hover {
+  box-shadow: inset 0 0 0 275px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .trend:hover :is(h3, h5, .plus-icon) {
   transform: none;
 }
 
-.trend:hover::after,
-.trend:hover::before {
-  opacity: 0.7;
-}
-
+.trend:hover h3,
 .trend:hover h5,
 .trend:hover .plus-icon {
   opacity: 1;
-}
-
-a.trend:hover img {
-  transform: scale(1.05) rotate(1deg);
 }
 
 // menu item hover
@@ -336,4 +295,33 @@ a.trend:hover img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+// hover header svg
+svg.header-svg {
+  fill: white;
+  transition: all 0.4s ease;
+}
+
+svg.header-svg:hover {
+  fill: black;
+}
+
+.header-svg span {
+  transition: all 0.4s ease;
+}
+
+svg.header-svg:hover + span {
+  color: white;
+}
+
+svg.inside-icon {
+  fill: black;
+  width: 40%;
+  height: 40%;
+  transition: all 0.4s ease;
+}
+
+.header-svg:hover + .inside-icon {
+  fill: white;
 }
