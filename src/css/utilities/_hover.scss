@@ -155,6 +155,10 @@ a.product:hover img {
   width: 0;
 }
 
+.site-header.b-style .menu-item::after {
+  display: none;
+}
+
 .menu-item:hover::after {
   width: 100%;
   left: 0;
@@ -179,7 +183,6 @@ svg.header-svg:hover + span {
 }
 
 svg.inside-icon {
-  fill: black;
   width: 40%;
   height: 40%;
   transition: all 0.4s ease;

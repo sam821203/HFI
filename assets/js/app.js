@@ -60,6 +60,15 @@ function minus() {
     }
 }
 
+// Change detail image
+function detailChange() {
+    var detailImg = function detailImg() {
+        var imgSrc = $(this).attr("src");
+        $(".big-img-hall img").attr("src", imgSrc);
+    };
+    $("body").on("click", ".small-img img", detailImg);
+}
+
 // Change image color
 function imgColorChange() {
     var proColor = function proColor() {
@@ -77,11 +86,11 @@ function hoverBackground() {
         $(".hoverbg img").attr("src", bgSrc);
     };
 
-    $("body").on("mouseover", ".hoverbg-items img", hoverBg);
+    $("body").on("mouseenter", ".hoverbg-items img", hoverBg);
 }
 
-// scroll header
-function scrollHeader() {
+// scroll header white
+function scrollHeaderWhite() {
     $(window).on("scroll", function () {
         var scrollTop = $(this).scrollTop();
         if (scrollTop > 0) {
@@ -113,8 +122,9 @@ $(function () {
     categoryToggle();
     listToggle();
     heroSwiper();
+    detailChange();
     imgColorChange();
-    scrollHeader();
+    scrollHeaderWhite();
     menuBarToggle();
 });
 
