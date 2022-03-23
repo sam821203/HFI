@@ -116,6 +116,7 @@ module.exports = {
         digitaldes: "68.75rem",
         digitalmob: "1500px",
         logo: "113px",
+        hoverbg: "780px",
       },
     },
   },

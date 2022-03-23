@@ -45,6 +45,12 @@ $(".toggle-cat").on("click", function () {
     $(this).siblings(".cat-body").slideToggle();
 });
 
+// inquiry list toggle
+$(".toggle-list").on("click", function () {
+    $(this).toggleClass("list-active");
+    $(this).siblings(".list-body").slideToggle();
+});
+
 // pagination
 var count = 1;
 var countPage = document.getElementById("count");
@@ -75,25 +81,29 @@ function minus() {
 // $("body").on("click", ".movie-stills-carousel .carousel-wrap li img", foo);
 
 var proColor = function proColor() {
-    console.log("hi");
     // Get current image source
     var imgSrc = $(this).attr("src");
 
     // Apply grayscale to thumbnails except selected
-    $(".movie-stills-carousel .carousel-wrap").find("img").css("filter", "grayscale(1)").css("transition", ".4s");
-    $(this).css("filter", "none");
+    // $(".movie-stills-carousel .carousel-wrap")
+    //   .find("img")
+    //   .css("filter", "grayscale(1)")
+    //   .css("transition", ".4s");
+    // $(this).css("filter", "none");
 
     // Change image
     $(".product-hall img").attr("src", imgSrc);
 };
-
 $("body").on("click", ".product-color img", proColor);
 
-// $(".product-color img").click(function () {
-//   console.log("hi");
-//   const imgSrc = $(this).attr("src");
-//   $(".product-hall img").attr("src", imgSrc);
-// });
+// Change image on hover
+var hoverBg = function hoverBg() {
+    var bgSrc = $(this).attr("src");
+    console.log(bgSrc);
+    $(".hoverbg img").attr("src", bgSrc);
+};
+
+$("body").on("mouseover", ".hoverbg-items img", hoverBg);
 
 // scroll header
 $(window).on("scroll", function () {
@@ -104,15 +114,6 @@ $(window).on("scroll", function () {
         $(".site-header").removeClass("is-active");
     }
 });
-
-// $(window).on("scroll", function () {
-//   var scrollTop = $(this).scrollTop();
-//   if (scrollTop > 0) {
-//     $(".site-header-mob").addClass("is-active");
-//   } else {
-//     $(".site-header-mob").removeClass("is-active");
-//   }
-// });
 
 // menu bar
 var menuBar = document.querySelector(".menu-bar");
