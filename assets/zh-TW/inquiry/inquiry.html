@@ -300,173 +300,367 @@
     <main>
       <section
         style="background-image: url(../../img/inquiry_bg.jpg)"
-        class="bg-cover w-full h-225.5 bg-center bg-no-repeat section-mb relative"
+        class="w-full h-full bg-cover bg-center bg-no-repeat pt-25 mb-0 md:h-225.5 md:mb-25"
       >
-        <div class="position-center w-full px-5 lg:px-55">
-          <div class="h-full flex justify-center mb-12">
-            <h1>INQUIRY</h1>
-          </div>
-          <div class="w-full px-10 py-12 bg-white">
-            <div class="text-lg mb-6">
-              Select the product and fill in the quantity requirement
+        <div class="section-after">
+          <div class="w-full px-5 pt-15 md:pt-30 xl:px-55">
+            <div
+              class="h-full flex justify-start mb-4 md:mb-12 md:justify-center"
+            >
+              <h1>INQUIRY</h1>
             </div>
+            <div
+              class="w-full p-0 bg-transparent shadow-none md:bg-white md:px-10 md:py-12 md:shadow-sm"
+            >
+              <div class="text-lg mb-6">
+                Please check the required boxes. (Optional)
+              </div>
 
-            <div class="flex flex-wrap py-5 border-t border-bdlight">
-              <div class="w-full">
-                <div class="flex flex-wrap">
-                  <div class="max-w-4/12 h-14 flex items-center">
-                    <div class="w-15 icon-mr">
-                      <img src="../../img/images/inquiry_1.jpg" alt="" />
-                    </div>
-                    <h5 class="text-primary font-medium">Y25TLF</h5>
-                  </div>
-                  <div class="max-w-3/12 flex items-center">
-                    <div class="select w-full h-full">
-                      <select class="w-full h-full text-base bg-input" required>
-                        <option value="" disabled selected>Swatch</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="max-w-4/12 h-14 flex items-center bg-input">
-                    <input
-                      type="text"
-                      placeholder="Need"
-                      name="Need"
-                      class="flex-grow px-5 py-2 text-base bg-input"
-                    />
-                  </div>
-                  <div class="max-w-1/12 h-14 flex items-center">
-                    <a href="javascript:;">
+              <!-- first item -->
+              <div class="relative py-8 border-t border-bdlight md:py-4">
+                <div class="flex flex-wrap py-5">
+                  <div class="w-full">
+                    <div class="flex flex-wrap g-5">
                       <div
-                        class="w-8 h-8 border-2 border-black rounded-full relative"
+                        class="w-full h-14 flex justify-between items-center mb-8 md:w-5/12 md:mb-0"
                       >
-                        <div class="w-3 position-center">
-                          <img
-                            src="../../img/icons/close.svg"
-                            alt=""
-                            class="logo-contain"
-                          />
+                        <div class="flex items-start md:items-center">
+                          <div class="w-25 icon-mr md:w-15">
+                            <img
+                              src="../../img/images/inquiry_1.jpg"
+                              alt=""
+                              class="object-cover w-full h-full"
+                            />
+                          </div>
+                          <h5
+                            class="text-xl text-primary font-medium md:text-base"
+                          >
+                            Y25TLF
+                          </h5>
                         </div>
+
+                        <a href="javascript:;" class="absolute top-4 right-0">
+                          <div
+                            class="block w-6 h-6 border border-black rounded-full relative md:hidden"
+                          >
+                            <div class="w-2 position-center">
+                              <img
+                                src="../../img/icons/close.svg"
+                                alt=""
+                                class="logo-contain"
+                              />
+                            </div>
+                          </div>
+                        </a>
                       </div>
-                    </a>
+
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+
+                      <div class="hidden items-center w-1/12 h-14 md:flex">
+                        <a href="javascript:;">
+                          <div
+                            class="w-8 h-8 border-2 border-black rounded-full relative"
+                          >
+                            <div class="w-3 position-center">
+                              <img
+                                src="../../img/icons/close.svg"
+                                alt=""
+                                class="logo-contain"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative py-8 border-t border-bdlight md:py-4">
+                <div class="flex flex-wrap py-5">
+                  <div class="w-full">
+                    <div class="flex flex-wrap g-5">
+                      <div
+                        class="w-full h-14 flex justify-between items-center mb-8 md:w-5/12 md:mb-0"
+                      >
+                        <div class="flex items-start md:items-center">
+                          <div class="w-25 icon-mr md:w-15">
+                            <img
+                              src="../../img/images/inquiry_2.jpg"
+                              alt=""
+                              class="object-cover w-full h-full"
+                            />
+                          </div>
+                          <h5
+                            class="text-xl text-primary font-medium md:text-base"
+                          >
+                            Y25TLF
+                          </h5>
+                        </div>
+
+                        <a href="javascript:;" class="absolute top-4 right-0">
+                          <div
+                            class="block w-6 h-6 border border-black rounded-full relative md:hidden"
+                          >
+                            <div class="w-2 position-center">
+                              <img
+                                src="../../img/icons/close.svg"
+                                alt=""
+                                class="logo-contain"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+
+                      <div class="hidden items-center w-1/12 h-14 md:flex">
+                        <a href="javascript:;">
+                          <div
+                            class="w-8 h-8 border-2 border-black rounded-full relative"
+                          >
+                            <div class="w-3 position-center">
+                              <img
+                                src="../../img/icons/close.svg"
+                                alt=""
+                                class="logo-contain"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative py-8 border-t border-bdlight md:py-4">
+                <div class="flex flex-wrap py-5">
+                  <div class="w-full">
+                    <div class="flex flex-wrap g-5">
+                      <div
+                        class="w-full h-14 flex justify-between items-center mb-8 md:w-5/12 md:mb-0"
+                      >
+                        <div class="flex items-start md:items-center">
+                          <div class="w-25 icon-mr md:w-15">
+                            <img
+                              src="../../img/images/inquiry_3.jpg"
+                              alt=""
+                              class="object-cover w-full h-full"
+                            />
+                          </div>
+                          <h5
+                            class="text-xl text-primary font-medium md:text-base"
+                          >
+                            Y25TLF
+                          </h5>
+                        </div>
+
+                        <a href="javascript:;" class="absolute top-4 right-0">
+                          <div
+                            class="block w-6 h-6 border border-black rounded-full relative md:hidden"
+                          >
+                            <div class="w-2 position-center">
+                              <img
+                                src="../../img/icons/close.svg"
+                                alt=""
+                                class="logo-contain"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" checked="checked" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+                      <div class="w-full flex items-center md:w-2/12">
+                        <form action="">
+                          <label class="checkwrap text-base text-bodytext"
+                            >WOVEN
+                            <input type="checkbox" />
+                            <span class="round-check"></span>
+                          </label>
+                        </form>
+                      </div>
+
+                      <div class="hidden items-center w-1/12 h-14 md:flex">
+                        <a href="javascript:;">
+                          <div
+                            class="w-8 h-8 border-2 border-black rounded-full relative"
+                          >
+                            <div class="w-3 position-center">
+                              <img
+                                src="../../img/icons/close.svg"
+                                alt=""
+                                class="logo-contain"
+                              />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- <div class="grid grid-cols-12 gap-5 py-5 border-t border-bdlight">
-              <div class="col-span-4 h-14 flex items-center">
-                <div class="w-15 icon-mr">
-                  <img src="../../img/images/inquiry_1.jpg" alt="" />
-                </div>
-                <h5 class="text-primary font-medium">Y25TLF</h5>
-              </div>
-              <div class="col-span-3 flex items-center">
-                <div class="select w-full h-full">
-                  <select class="w-full h-full text-base bg-input" required>
-                    <option value="" disabled selected>Swatch</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-span-4 h-14 flex items-center bg-input">
-                <input
-                  type="text"
-                  placeholder="Need"
-                  name="Need"
-                  class="flex-grow px-5 py-2 text-base bg-input"
-                />
-              </div>
-              <div class="col-span-1 h-14 flex items-center">
-                <a href="javascript:;">
-                  <div
-                    class="w-8 h-8 border-2 border-black rounded-full relative"
-                  >
-                    <div class="w-3 position-center">
-                      <img
-                        src="../../img/icons/close.svg"
-                        alt=""
-                        class="logo-contain"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="px-5 lg:px-55">
-          <div class="mt-25 h-full text-center mb-8">
-            <h1 class="mb-10">CONTACT FORM</h1>
-            <h5 class="mb-4">
-              All samples are free of charge. Please complete your inquiry
-              first, confirm your recipient details and then submit your
-              inquiry.
-            </h5>
-            <h5>* Must be filled out</h5>
-          </div>
+      <section class="px-5 mb-12.5 text-left md:text-center md:mb-25 lg:px-55">
+        <div class="h-full text-left mb-8 md:text-center">
+          <h1 class="mb-4 md:mb-10">CONTACT FORM</h1>
+          <h5 class="mb-4">
+            All samples are free of charge. Please complete your inquiry first,
+            confirm your recipient details and then submit your inquiry.
+          </h5>
+          <h5>* Must be filled out</h5>
         </div>
 
-        <form action="" class="section-mb">
-          <div class="px-5 lg:px-55 grid grid-cols-2 gap-8 mb-14">
-            <div class="col-span-1 h-14 flex items-center">
-              <div class="select w-full h-full">
-                <select class="w-full h-full text-base bg-input" required>
-                  <option value="" disabled selected>Subject *</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                </select>
+        <form action="">
+          <div class="flex flex-wrap g-7.5">
+            <div class="w-full">
+              <div class="flex flex-wrap g-7.5">
+                <div class="w-full md:w-1/2">
+                  <div class="select w-full h-full">
+                    <select
+                      class="w-full h-full text-base bg-input p-5"
+                      required
+                    >
+                      <option value="" disabled selected>Subject *</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                  <div class="h-full flex items-center bg-input">
+                    <input
+                      type="text"
+                      placeholder="Name *"
+                      name="Name *"
+                      class="flex-grow p-5 text-base bg-input"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-span-1 h-14 flex items-center bg-input">
-              <input
-                type="text"
-                placeholder="Name *"
-                name="Name"
-                class="flex-grow px-5 py-2 text-base bg-input"
-              />
+            <div class="w-full">
+              <div class="flex flex-wrap g-7.5">
+                <div class="w-full md:w-1/2">
+                  <div class="h-full flex items-center bg-input">
+                    <input
+                      type="text"
+                      placeholder="Company"
+                      name="Company"
+                      class="flex-grow p-5 text-base bg-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                  <div class="h-full flex items-center bg-input">
+                    <input
+                      type="text"
+                      placeholder="Telephone *"
+                      name="Telephone *"
+                      class="flex-grow p-5 text-base bg-input"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-span-1 h-14 flex items-center bg-input">
-              <input
-                type="text"
-                placeholder="Company"
-                name="Company"
-                class="flex-grow px-5 py-2 text-base bg-input"
-              />
+            <div class="w-full">
+              <div class="flex flex-wrap g-7.5">
+                <div class="w-full md:w-1/2">
+                  <div class="h-full flex items-center bg-input">
+                    <input
+                      type="text"
+                      placeholder="E-mail *"
+                      name="E-mail *"
+                      class="flex-grow p-5 text-base bg-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                  <div class="h-full flex items-center bg-input">
+                    <input
+                      type="text"
+                      placeholder="Address"
+                      name="Address"
+                      class="flex-grow p-5 text-base bg-input"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-span-1 h-14 flex items-center bg-input">
-              <input
-                type="text"
-                placeholder="Telephone *"
-                name="Telephone"
-                class="flex-grow px-5 py-2 text-base bg-input"
-              />
-            </div>
-            <div class="col-span-1 h-14 flex items-center bg-input">
-              <input
-                type="email"
-                placeholder="E-mail *"
-                name="E-mail"
-                class="flex-grow px-5 py-2 text-base bg-input"
-              />
-            </div>
-            <div class="col-span-1 h-14 flex items-center bg-input">
-              <input
-                type="text"
-                placeholder="Address"
-                name="Address"
-                class="flex-grow px-5 py-2 text-base bg-input"
-              />
-            </div>
-
-            <!-- textarea -->
-            <div class="col-span-2">
+            <div class="w-full">
               <textarea
                 id="message"
                 name="message"
@@ -478,11 +672,11 @@
             </div>
           </div>
 
-          <div class="flex justify-center">
+          <div class="flex justify-center mt-5 md:mt-10">
             <button
               onclick="location.href=''"
               type="submit"
-              class="w-40 button-b lg:hover:bg-primaryhover trans200 text-white mb-8"
+              class="w-full md:w-40 button-b trans200 text-white border border-transparent mb-8 lg:hover:bg-white lg:hover:text-black lg:hover:border-black"
             >
               <h5>SUBMIT</h5>
             </button>
