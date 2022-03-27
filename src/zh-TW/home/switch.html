@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 600px;
+        background-color: #fff;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      ul {
+        margin-left: 40px;
+      }
+
+      ul li {
+        color: tomato;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-right: 4px;
+      }
+
+      ul li:hover {
+        font-size: 20px;
+      }
+
+      .selected {
+        background-color: cadetblue;
+        color: white;
+      }
+
+      .content {
+        background-color: rgb(77, 62, 240);
+        padding: 20px;
+        margin: 0 20px;
+      }
+
+      .content p {
+        color: #e9e9e9;
+        display: none;
+      }
+
+      .content p:first-child {
+        display: block;
+      }
+
+      /* .content p:not(:first-of-type) {
+        display: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li data-value=".Hightlight">Hightlight</li>
+        <li data-value=".NewTech">NewTech</li>
+        <li data-value=".MarketApplication">MarketApplication</li>
+      </ul>
+
+      <div class="content">
+        <p class="Hightlight">
+          11111 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos
+          nemo nisi quis eligendi architecto reprehenderit quod iste dolor
+          nostrum delectus, repudiandae sed aspernatur rem, voluptates
+          voluptatum temporibus tenetur accusantium!
+        </p>
+        <p class="NewTech">
+          22222 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos
+          nemo nisi quis eligendi architecto reprehenderit quod iste dolor
+          nostrum delectus, repudiandae sed aspernatur rem, voluptates
+          voluptatum temporibus tenetur accusantium!
+        </p>
+        <p class="MarketApplication">
+          33333 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos
+          nemo nisi quis eligendi architecto reprehenderit quod iste dolor
+          nostrum delectus, repudiandae sed aspernatur rem, voluptates
+          voluptatum temporibus tenetur accusantium!
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function switchTab() {
+        $("ul li").click(function () {
+          $(this).addClass("selected").siblings().removeClass("selected");
+          $(".content > p").hide();
+          $($(this).data("value")).fadeIn();
+        });
+      }
+
+      $(function () {
+        switchTab();
+      });
+    </script>
+  </body>
+</html>

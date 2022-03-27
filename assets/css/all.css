@@ -30205,7 +30205,7 @@ ul.mybullet li::before {
   z-index: -1;
   object-fit: cover;
   filter: grayscale(1);
-  transition: filter 200ms ease, transform 250ms linear;
+  transition: filter 200ms ease, transform 200ms linear;
 }
 
 .product-color img {
@@ -30650,6 +30650,14 @@ a.hoverbg-items:hover img {
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+.w-style .menu-bar .lines > div {
+  background: #fff;
+}
+
+.b-style .menu-bar .lines > div {
+  background: black;
+}
+
 .menu-items {
   position: fixed;
   background: rgba(18, 18, 18, 0.75);
@@ -30667,6 +30675,10 @@ a.hoverbg-items:hover img {
 }
 
 /* menu bar animation */
+
+.menu-bar.open .lines > div {
+  background-color: #fff;
+}
 
 .menu-bar.open .line-1 {
   top: -2px !important;
@@ -30755,7 +30767,7 @@ a.hoverbg-items:hover img {
 
 .my-swiper-next {
   position: absolute;
-  bottom: 160px;
+  bottom: 200px;
   left: 102px;
   border: 1px solid #fff;
   width: 42px;
@@ -30803,7 +30815,7 @@ a.hoverbg-items:hover img {
 
 .my-swiper-prev {
   position: absolute;
-  bottom: 160px;
+  bottom: 200px;
   left: 50px;
   border: 1px solid #fff;
   width: 42px;
@@ -31132,29 +31144,46 @@ select:required:invalid {
   font-size: 24px;
   font-weight: 300;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.trend-tab::after {
+.trend-tab::after,
+.trend-tab.selected::after {
   content: "";
   width: 1px;
-  height: 0px;
   background-color: white;
   position: absolute;
   top: 40px;
-  left: 50%;
+  left: 32%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   transition: all 0.3s ease;
 }
 
-.trend-tab:hover,
-.trend-tab:active {
+.trend-tab::after {
+  height: 0px;
+}
+
+.trend-tab.selected::after {
+  height: 48px;
+}
+
+.trend-tab:hover {
   text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
   transition: all 0.3s ease;
 }
 
 .trend-tab:hover.trend-tab::after {
   height: 48px;
+}
+
+.trend-content div.trend-item {
+  display: none;
+}
+
+.trend-content div.trend-item:first-child {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* ==========

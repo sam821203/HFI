@@ -12,7 +12,7 @@
     <main>
       <section
         style="background-image: url(../../img/trend_bg.jpg)"
-        class="hero-img relative w-full h-81.5 bg-cover bg-center bg-no-repeat mb-12.5 md:h-225.5 md:mb-25"
+        class="hero-img relative w-full h-81.5 bg-cover bg-center bg-no-repeat mb-12.5 md:h-screen md:mb-25"
       >
         <div
           class="h-full flex justify-center items-center text-white px-5 lg:px-12.5"
@@ -21,21 +21,32 @@
         </div>
 
         <!-- larger -->
-        <div class="hidden md:flex position-middle-bottom w-full z-40">
-          <div
+        <div
+          class="trend-list hidden md:flex position-middle-bottom w-full z-40"
+        >
+          <ul
             class="w-full flex justify-center items-center text-white"
             data-aos="fade-up"
           >
-            <a href=""><div class="trend-tab">Highlight</div></a>
-            <div class="slash"></div>
-            <a href=""><div class="trend-tab">New Tech</div></a>
-            <div class="slash"></div>
-            <a href=""><div class="trend-tab">Market Application</div></a>
-          </div>
+            <li
+              data-value=".highlight"
+              class="trend-tab selected flex items-center"
+            >
+              <div>Highlight</div>
+              <div class="slash"></div>
+            </li>
+            <li data-value=".newtech" class="trend-tab flex items-center">
+              <div>New Tech</div>
+              <div class="slash"></div>
+            </li>
+            <li data-value=".marketapplication" class="trend-tab">
+              <div>Market Application</div>
+            </li>
+          </ul>
         </div>
 
         <!-- smaller -->
-        <div class="flex md:hidden position-middle-bottom-mob w-full z-40">
+        <!-- <div class="flex md:hidden position-middle-bottom-mob w-full z-40">
           <div
             class="w-full flex justify-center items-center text-white"
             data-aos="fade-up"
@@ -46,12 +57,12 @@
             <div class="slash-mob"></div>
             <a href=""><div class="text-base">Market Application</div></a>
           </div>
-        </div>
+        </div> -->
       </section>
 
-      <section class="px-5 lg:px-55 mb-12.5 md:mb-25">
+      <section class="trend-content px-5 lg:px-55 mb-12.5 md:mb-25">
         <!-- hover -->
-        <div class="hidden flex-wrap md:flex md:g-8 xl:g-10">
+        <div class="trend-item highlight flex-wrap md:flex md:g-8 xl:g-10">
           <div class="w-1/2 lg:w-1/3">
             <a href="../trend/trend-detail1.html" class="trend">
               <div class="text-center">
@@ -94,6 +105,9 @@
               <img src="../../img/images/trend_3.jpg" alt="" />
             </a>
           </div>
+        </div>
+
+        <div class="trend-item newtech flex-wrap md:flex md:g-8 xl:g-10">
           <div class="w-1/2 lg:w-1/3">
             <a href="../trend/trend-detail1.html" class="trend">
               <div class="text-center">
@@ -109,7 +123,7 @@
             </a>
           </div>
           <div class="w-1/2 lg:w-1/3">
-            <a href="../trend/trend-detail1.html" class="trend">
+            <a href="../trend/trend-detail2.html" class="trend">
               <div class="text-center">
                 <h3 class="mb-2">Zero waste</h3>
                 <h5 class="mb-5">TREND STORY OF 2022</h5>
@@ -123,7 +137,7 @@
             </a>
           </div>
           <div class="w-1/2 lg:w-1/3">
-            <a href="../trend/trend-detail1.html" class="trend">
+            <a href="../trend/trend-detail2.html" class="trend">
               <div class="text-center">
                 <h3 class="mb-2">Zero waste</h3>
                 <h5 class="mb-5">TREND STORY OF 2022</h5>
@@ -138,153 +152,200 @@
           </div>
         </div>
 
-        <!-- without hover -->
-        <div class="flex flex-wrap g-10 md:hidden">
-          <div class="w-full">
-            <div class="gradient-overlay relative">
-              <div class="position-center text-white">
-                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
-                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
-                <a href="">
-                  <div
-                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
-                  >
-                    +
-                  </div>
-                </a>
-              </div>
-              <a href="">
-                <div class="w-full">
-                  <img
-                    src="../../img/images/trend_1.jpg"
-                    alt=""
-                    class="object-cover object-center w-full h-full"
-                  />
+        <div
+          class="trend-item marketapplication flex-wrap md:flex md:g-8 xl:g-10"
+        >
+          <div class="w-1/2 lg:w-1/3">
+            <a href="../trend/trend-detail1.html" class="trend">
+              <div class="text-center">
+                <h3 class="mb-2">Zero waste</h3>
+                <h5 class="mb-5">TREND STORY OF 2022</h5>
+                <div
+                  class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                >
+                  +
                 </div>
-              </a>
-            </div>
+              </div>
+              <img src="../../img/images/trend_7.jpg" alt="" />
+            </a>
           </div>
-          <div class="w-full">
-            <div class="gradient-overlay relative">
-              <div class="position-center text-white">
-                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
-                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
-                <a href="">
-                  <div
-                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
-                  >
-                    +
-                  </div>
-                </a>
-              </div>
-              <a href="">
-                <div class="w-full">
-                  <img
-                    src="../../img/images/trend_1.jpg"
-                    alt=""
-                    class="object-cover object-center w-full h-full"
-                  />
+          <div class="w-1/2 lg:w-1/3">
+            <a href="../trend/trend-detail2.html" class="trend">
+              <div class="text-center">
+                <h3 class="mb-2">Zero waste</h3>
+                <h5 class="mb-5">TREND STORY OF 2022</h5>
+                <div
+                  class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                >
+                  +
                 </div>
-              </a>
-            </div>
+              </div>
+              <img src="../../img/images/trend_8.jpg" alt="" />
+            </a>
           </div>
-          <div class="w-full">
-            <div class="gradient-overlay relative">
-              <div class="position-center text-white">
-                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
-                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
-                <a href="">
-                  <div
-                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
-                  >
-                    +
-                  </div>
-                </a>
-              </div>
-              <a href="">
-                <div class="w-full">
-                  <img
-                    src="../../img/images/trend_1.jpg"
-                    alt=""
-                    class="object-cover object-center w-full h-full"
-                  />
+          <div class="w-1/2 lg:w-1/3">
+            <a href="../trend/trend-detail2.html" class="trend">
+              <div class="text-center">
+                <h3 class="mb-2">Zero waste</h3>
+                <h5 class="mb-5">TREND STORY OF 2022</h5>
+                <div
+                  class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                >
+                  +
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="gradient-overlay relative">
-              <div class="position-center text-white">
-                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
-                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
-                <a href="">
-                  <div
-                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
-                  >
-                    +
-                  </div>
-                </a>
               </div>
-              <a href="">
-                <div class="w-full">
-                  <img
-                    src="../../img/images/trend_1.jpg"
-                    alt=""
-                    class="object-cover object-center w-full h-full"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="gradient-overlay relative">
-              <div class="position-center text-white">
-                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
-                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
-                <a href="">
-                  <div
-                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
-                  >
-                    +
-                  </div>
-                </a>
-              </div>
-              <a href="">
-                <div class="w-full">
-                  <img
-                    src="../../img/images/trend_1.jpg"
-                    alt=""
-                    class="object-cover object-center w-full h-full"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="w-full">
-            <div class="gradient-overlay relative">
-              <div class="position-center text-white">
-                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
-                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
-                <a href="">
-                  <div
-                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
-                  >
-                    +
-                  </div>
-                </a>
-              </div>
-              <a href="">
-                <div class="w-full">
-                  <img
-                    src="../../img/images/trend_1.jpg"
-                    alt=""
-                    class="object-cover object-center w-full h-full"
-                  />
-                </div>
-              </a>
-            </div>
+              <img src="../../img/images/trend_9.jpg" alt="" />
+            </a>
           </div>
         </div>
+
+        <!-- without hover -->
+        <!-- <div class="flex flex-wrap g-10 md:hidden">
+          <div class="w-full">
+            <div class="gradient-overlay relative">
+              <div class="position-center text-white">
+                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
+                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
+                <a href="">
+                  <div
+                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                  >
+                    +
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <div class="w-full">
+                  <img
+                    src="../../img/images/trend_1.jpg"
+                    alt=""
+                    class="object-cover object-center w-full h-full"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="gradient-overlay relative">
+              <div class="position-center text-white">
+                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
+                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
+                <a href="">
+                  <div
+                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                  >
+                    +
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <div class="w-full">
+                  <img
+                    src="../../img/images/trend_1.jpg"
+                    alt=""
+                    class="object-cover object-center w-full h-full"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="gradient-overlay relative">
+              <div class="position-center text-white">
+                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
+                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
+                <a href="">
+                  <div
+                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                  >
+                    +
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <div class="w-full">
+                  <img
+                    src="../../img/images/trend_1.jpg"
+                    alt=""
+                    class="object-cover object-center w-full h-full"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="gradient-overlay relative">
+              <div class="position-center text-white">
+                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
+                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
+                <a href="">
+                  <div
+                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                  >
+                    +
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <div class="w-full">
+                  <img
+                    src="../../img/images/trend_1.jpg"
+                    alt=""
+                    class="object-cover object-center w-full h-full"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="gradient-overlay relative">
+              <div class="position-center text-white">
+                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
+                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
+                <a href="">
+                  <div
+                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                  >
+                    +
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <div class="w-full">
+                  <img
+                    src="../../img/images/trend_1.jpg"
+                    alt=""
+                    class="object-cover object-center w-full h-full"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="gradient-overlay relative">
+              <div class="position-center text-white">
+                <h2 class="mb-2 text-center whitespace-no-wrap">Zero waste</h2>
+                <h5 class="mb-5 font-light text-center">TREND STORY OF 2022</h5>
+                <a href="">
+                  <div
+                    class="plus-icon mx-auto w-10 h-10 p-3 border border-white rounded-full flex justify-center items-center text-xl"
+                  >
+                    +
+                  </div>
+                </a>
+              </div>
+              <a href="">
+                <div class="w-full">
+                  <img
+                    src="../../img/images/trend_1.jpg"
+                    alt=""
+                    class="object-cover object-center w-full h-full"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div> -->
       </section>
     </main>
     <!-- @@include ../include/footer.html -->

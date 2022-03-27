@@ -188,6 +188,14 @@
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+.w-style .menu-bar .lines > div {
+  background: #fff;
+}
+
+.b-style .menu-bar .lines > div {
+  background: black;
+}
+
 .menu-items {
   position: fixed;
   background: rgba(18, 18, 18, 0.75);
@@ -206,6 +214,10 @@
 }
 
 /* menu bar animation */
+.menu-bar.open .lines > div {
+  background-color: #fff;
+}
+
 .menu-bar.open .line-1 {
   top: -2px !important;
   -webkit-transform: rotate(135deg);
