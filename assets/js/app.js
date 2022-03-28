@@ -80,13 +80,13 @@ function imgColorChange() {
 
 // Change image on hover
 function hoverBackground() {
-    var hoverBg = function hoverBg() {
-        var bgSrc = $(this).attr("src");
-        console.log(bgSrc);
+    var hoverBgEnter = function hoverBgEnter() {
+        var bgSrc = $(this).find("img").attr("src");
+        $(".hoverbg img").toggleClass("hall-animate");
         $(".hoverbg img").attr("src", bgSrc);
     };
 
-    $("body").on("mouseenter", ".hoverbg-items img", hoverBg);
+    $("body").on("mouseenter", ".hoverbg-items", hoverBgEnter);
 }
 
 // scroll header white
@@ -135,6 +135,7 @@ $(function () {
     heroSwiper();
     detailChange();
     imgColorChange();
+    hoverBackground();
     scrollHeaderWhite();
     menuBarToggle();
     trendSwitchTab();

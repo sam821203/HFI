@@ -18,6 +18,7 @@
           <div class="w-full px-5 pt-15 md:pt-30 xl:px-55">
             <div
               class="h-full flex justify-start mb-4 md:mb-12 md:justify-center"
+              data-aos="fade-up"
             >
               <h1>INQUIRY</h1>
             </div>
@@ -287,14 +288,10 @@
       </section>
 
       <section class="px-5 mb-12.5 text-left md:text-center md:mb-25 lg:px-55">
-        <div class="h-full text-left mb-8 md:text-center">
-          <h1 class="mb-4 md:mb-10">CONTACT FORM</h1>
-          <h5 class="mb-4">
-            All samples are free of charge. Please complete your inquiry first,
-            confirm your recipient details and then submit your inquiry.
-          </h5>
-          <h5>* Must be filled out</h5>
-        </div>
+        <h1 class="mb-4 text-left md:mb-12 md:text-center">CONTACT FORM</h1>
+        <h5 class="mb-5">
+          Please fill in the information and submit the request.
+        </h5>
 
         <form action="">
           <div class="flex flex-wrap g-7.5">
@@ -317,7 +314,7 @@
                     <input
                       type="text"
                       placeholder="Name *"
-                      name="Name *"
+                      name="name"
                       class="flex-grow p-5 text-base bg-input"
                     />
                   </div>
@@ -330,8 +327,8 @@
                   <div class="h-full flex items-center bg-input">
                     <input
                       type="text"
-                      placeholder="Company"
-                      name="Company"
+                      placeholder="Company *"
+                      name="company"
                       class="flex-grow p-5 text-base bg-input"
                     />
                   </div>
@@ -355,7 +352,7 @@
                     <input
                       type="text"
                       placeholder="E-mail *"
-                      name="E-mail *"
+                      name="e-mail"
                       class="flex-grow p-5 text-base bg-input"
                     />
                   </div>
@@ -364,8 +361,8 @@
                   <div class="h-full flex items-center bg-input">
                     <input
                       type="text"
-                      placeholder="Address"
-                      name="Address"
+                      placeholder="Address *"
+                      name="address"
                       class="flex-grow p-5 text-base bg-input"
                     />
                   </div>
@@ -373,12 +370,27 @@
               </div>
             </div>
             <div class="w-full">
+              <div class="flex flex-wrap g-7.5">
+                <div class="w-full md:w-1/2">
+                  <div class="h-full flex items-center bg-input">
+                    <input
+                      type="text"
+                      placeholder="Tital"
+                      name="tital"
+                      class="flex-grow p-5 text-base bg-input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
               <textarea
                 id="message"
                 name="message"
                 rows="4"
                 cols="50"
-                placeholder="Message *"
+                placeholder="Message"
                 class="w-full px-5 py-3 bg-input"
               ></textarea>
             </div>
