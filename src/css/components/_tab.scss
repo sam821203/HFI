@@ -1,41 +1,53 @@
-.trend-tab {
-  position: relative;
-  font-size: 24px;
-  font-weight: 300;
-  transition: all 0.2s ease;
-  cursor: pointer;
+@media only screen and (max-width: 767px) {
+  .trend-tab.selected::after {
+    height: 0px;
+  }
+
+  .trend-tab {
+    cursor: pointer;
+  }
 }
 
-.trend-tab::after,
-.trend-tab.selected::after {
-  content: "";
-  width: 1px;
-  background-color: white;
-  position: absolute;
-  top: 40px;
-  left: 32%;
-  transform: translateX(-50%);
-  transition: all 0.3s ease;
-}
+@media screen and (min-width: 768px) {
+  .trend-tab {
+    position: relative;
+    font-size: 24px;
+    font-weight: 300;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
 
-.trend-tab::after {
-  height: 0px;
-}
+  .trend-tab::after,
+  .trend-tab.selected::after {
+    content: "";
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 32%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
 
-.trend-tab.selected::after {
-  height: 48px;
-}
+  .trend-tab::after {
+    height: 0px;
+  }
 
-.trend-tab:hover {
-  text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
+  .trend-tab.selected::after {
+    height: 48px;
+  }
 
-.trend-tab:hover.trend-tab::after {
-  height: 48px;
+  .trend-tab:hover {
+    text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .trend-tab:hover.trend-tab::after {
+    height: 48px;
+  }
 }
 
 .trend-content div.trend-item {

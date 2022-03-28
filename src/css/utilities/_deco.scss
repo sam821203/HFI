@@ -63,9 +63,9 @@
 }
 
 // slash
-.slash {
+.slash,
+.slash-0 {
   height: 50px;
-  border-right: 1px solid white;
   transform: rotateZ(60deg);
   margin-left: 30px;
   margin-right: 30px;
@@ -76,6 +76,15 @@
   border-right: 1px solid white;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.slash,
+.slash-mob {
+  border-right: 1px solid white;
+}
+
+.slash-0 {
+  border-right: 0px;
 }
 
 .slash-page {

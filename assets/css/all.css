@@ -29937,14 +29937,6 @@ a.pswp__share--download:hover {
       transform: translateY(-50%);
 }
 
-.position-middle-bottom {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-}
-
 .position-middle-bottom-mob {
   position: absolute;
   top: 88%;
@@ -29989,6 +29981,14 @@ a.pswp__share--download:hover {
   .position-description {
     bottom: 16px;
   }
+
+  .position-middle-bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -29997,6 +29997,14 @@ a.pswp__share--download:hover {
     bottom: 30px;
     left: 18px;
     z-index: 20;
+  }
+
+  .position-middle-bottom {
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
   }
 }
 
@@ -30064,9 +30072,9 @@ a.pswp__share--download:hover {
   height: 1px;
 }
 
-.slash {
+.slash,
+.slash-0 {
   height: 50px;
-  border-right: 1px solid white;
   -ms-transform: rotate(60deg);
       transform: rotateZ(60deg);
   margin-left: 30px;
@@ -30078,6 +30086,15 @@ a.pswp__share--download:hover {
   border-right: 1px solid white;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.slash,
+.slash-mob {
+  border-right: 1px solid white;
+}
+
+.slash-0 {
+  border-right: 0px;
 }
 
 .slash-page {
@@ -30240,6 +30257,45 @@ a .product:hover img {
       transform: scale(1.05) rotate(1deg);
 }
 
+@media only screen and (max-width: 767px) {
+  .trend h3,
+  .trend h5,
+  .trend .plus-icon {
+    opacity: 1;
+  }
+
+  .trend::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0.4;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .trend h3,
+  .trend h5,
+  .trend .plus-icon {
+    opacity: 0;
+    transition: 250ms opacity linear, 250ms transform ease-in-out;
+  }
+
+  .trend::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+  }
+}
+
 .trend {
   display: -ms-flexbox;
   display: flex;
@@ -30266,13 +30322,6 @@ a .product:hover img {
   z-index: -1;
   object-fit: cover;
   transition: filter 150ms ease, transform 200ms linear;
-}
-
-.trend h3,
-.trend h5,
-.trend .plus-icon {
-  opacity: 0;
-  transition: 250ms opacity linear, 250ms transform ease-in-out;
 }
 
 .trend:hover {
@@ -31139,42 +31188,54 @@ select:required:invalid {
   color: rgba(63, 69, 71, 0.6);
 }
 
-.trend-tab {
-  position: relative;
-  font-size: 24px;
-  font-weight: 300;
-  transition: all 0.2s ease;
-  cursor: pointer;
+@media only screen and (max-width: 767px) {
+  .trend-tab.selected::after {
+    height: 0px;
+  }
+
+  .trend-tab {
+    cursor: pointer;
+  }
 }
 
-.trend-tab::after,
-.trend-tab.selected::after {
-  content: "";
-  width: 1px;
-  background-color: white;
-  position: absolute;
-  top: 40px;
-  left: 32%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-  transition: all 0.3s ease;
-}
+@media screen and (min-width: 768px) {
+  .trend-tab {
+    position: relative;
+    font-size: 24px;
+    font-weight: 300;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
 
-.trend-tab::after {
-  height: 0px;
-}
+  .trend-tab::after,
+  .trend-tab.selected::after {
+    content: "";
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 32%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
 
-.trend-tab.selected::after {
-  height: 48px;
-}
+  .trend-tab::after {
+    height: 0px;
+  }
 
-.trend-tab:hover {
-  text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
-  transition: all 0.3s ease;
-}
+  .trend-tab.selected::after {
+    height: 48px;
+  }
 
-.trend-tab:hover.trend-tab::after {
-  height: 48px;
+  .trend-tab:hover {
+    text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
+    transition: all 0.3s ease;
+  }
+
+  .trend-tab:hover.trend-tab::after {
+    height: 48px;
+  }
 }
 
 .trend-content div.trend-item {

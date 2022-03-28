@@ -54,26 +54,12 @@
   transform: translateY(-50%);
 }
 
-.position-middle-bottom {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .position-middle-bottom-mob {
   position: absolute;
   top: 88%;
   left: 50%;
   transform: translateX(-50%);
 }
-
-// .position-description {
-//   position: absolute;
-//   bottom: 30px;
-//   left: 18px;
-//   z-index: 20;
-// }
 
 .pro-gradient::after {
   content: "";
@@ -113,6 +99,13 @@
   .position-description {
     bottom: 16px;
   }
+
+  .position-middle-bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -121,5 +114,12 @@
     bottom: 30px;
     left: 18px;
     z-index: 20;
+  }
+
+  .position-middle-bottom {
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    transform: translateX(-50%);
   }
 }
