@@ -30484,15 +30484,6 @@ a .product:hover img {
   transition: filter 150ms ease, transform 200ms linear;
 }
 
-.trend:hover {
-  box-shadow: inset 0 0 0 275px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-.trend:hover :is(h3, h5, .plus-icon) {
-  -ms-transform: none;
-      transform: none;
-}
-
 .menu-item {
   color: #fff;
   text-decoration: none;
@@ -30705,6 +30696,14 @@ svg.inside-icon {
     left: 0;
     background: rgba(0, 0, 0, 0.75);
     opacity: 0;
+  }
+
+  .trend:hover {
+    box-shadow: inset 0 0 0 275px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.8);
+  }
+
+  .trend:hover :is(h3, h5, .plus-icon) {
+    opacity: 1;
   }
 
   .hoverbg-items {
