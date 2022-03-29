@@ -1,18 +1,3 @@
-.button-b {
-  padding: 18px 48px;
-  background-color: black;
-  text-align: center;
-  color: white;
-}
-
-.button-w {
-  height: 42px;
-  text-align: center;
-  border: 1px solid rgba(112, 112, 112, 0.3);
-  font-size: 18px;
-  font-weight: 300;
-}
-
 // button flip-down
 .btn-flipdown {
   color: transparent;
@@ -71,4 +56,131 @@
 .btn-flipdown:hover .back {
   color: white;
   transform: rotateX(0deg);
+}
+
+// btn turn round
+.btn-turnround {
+  height: 100px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-turnround a {
+  color: black;
+  padding: 4px 12px;
+  display: inline-block;
+  border: 2px solid transparent;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02rem;
+}
+
+.btn-turnround a .text {
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.btn-turnround a:after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: calc(0.7rem * 1.2);
+  right: calc(0.7rem * 1.2);
+  height: 2px;
+  background: #c98900;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+    right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+    left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+.btn-turnround .line {
+  position: absolute;
+  background: #c98900;
+}
+.btn-turnround .line.right,
+.btn-turnround .line.left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+
+.btn-turnround .line.top,
+.btn-turnround .line.bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+
+.btn-turnround .line.right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+
+.btn-turnround .line.top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+
+.btn-turnround .line.left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+
+.btn-turnround .line.bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+.btn-turnround a:hover .text,
+.btn-turnround a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.btn-turnround a:hover:after,
+.btn-turnround a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+    right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+
+.btn-turnround a:hover .line,
+.btn-turnround a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+
+.btn-turnround a:hover .line.right,
+.btn-turnround a:active .line.right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.btn-turnround a:hover .line.top,
+.btn-turnround a:active .line.top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.btn-turnround a:hover .line.left,
+.btn-turnround a:active .line.left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.btn-turnround a:hover .line.bottom,
+.btn-turnround a:active .line.bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
 }

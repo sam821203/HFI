@@ -103,10 +103,6 @@ ul.mybullet li {
   font-weight: 300;
 }
 
-ul.mybullet li:hover {
-  color: #c98900;
-}
-
 ul.mybullet li::before {
   content: "";
   background-color: #c98900;

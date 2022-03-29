@@ -60,6 +60,7 @@ module.exports = {
         primary: "#003665",
         secondary: "#C98900",
         secondaryhover: "#B07800",
+        whitehover: "#F2F2F2",
         black: "#222222",
         bodytext: "#888888",
         bdlight: "#D3D3D3",

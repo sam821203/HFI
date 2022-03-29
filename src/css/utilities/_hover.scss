@@ -276,9 +276,28 @@ svg.inside-icon {
 }
 
 // inquiry close hover
-.inquiry-hover:hover.inquiry-hover img {
+// myfavourite close hover
+.inquiry-hover img,
+.favourite-hover img {
+  transform: scale(1) rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.inquiry-hover:hover.inquiry-hover img,
+.favourite-hover:hover.favourite-hover img {
   transform: scale(0.75) rotate(360deg);
   transition: all 0.5s ease-in-out;
+}
+
+// Add an inquiry hover
+.add-inquiry-hover > div {
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.add-inquiry-hover:hover > div {
+  margin-right: 16px;
+  transition: all 0.3s ease;
 }
 
 // ========== media ==========
