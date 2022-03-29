@@ -59,6 +59,7 @@ module.exports = {
       colors: {
         primary: "#003665",
         secondary: "#C98900",
+        secondaryhover: "#B07800",
         black: "#222222",
         bodytext: "#888888",
         bdlight: "#D3D3D3",
@@ -93,6 +94,7 @@ module.exports = {
         18: "4.5rem",
         19: "4.75rem",
         20: "5rem",
+        22.5: "5.625rem",
         25: "6.25rem",
         30: "7.5rem",
         35: "8.75rem",

@@ -297,7 +297,7 @@
         </div>
 
         <div
-          class="max-w-1000px px-0 mx-auto lg:px-5 w-full position-search z-40"
+          class="max-w-1000px px-0 mx-auto w-full position-search z-40 md:px-5 xl:px-0"
         >
           <form
             action=""
@@ -312,9 +312,7 @@
                   class="w-5/6 h-full pl-10 text-base rounded-l-none md:rounded-l-full"
                 />
                 <button
-                  onclick="location.href=''"
-                  type="submit"
-                  class="w-1/6 flex justify-center items-center bg-secondary lg:hover:bg-primaryhover trans200 text-white rounded-r-none md:rounded-r-full"
+                  class="w-1/6 flex justify-center items-center bg-secondary lg:hover:bg-primaryhover trans200 text-white rounded-r-none md:rounded-r-full md:hover:bg-secondaryhover"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +336,9 @@
         </div>
       </section>
 
-      <section class="max-w-1000px flex flex-wrap px-5 mx-auto xl:flex-no-wrap">
+      <section
+        class="max-w-1000px flex flex-wrap px-5 mx-auto lg:px-0 xl:flex-no-wrap"
+      >
         <div class="w-full md:mr-0 xl:w-1/4 xl:mr-7">
           <!-- Category -->
           <form action="">
@@ -376,15 +376,17 @@
               </div>
             </div>
 
-            <div>
-              <button
-                onclick="location.href=''"
-                type="submit"
-                class="w-full button-b mb-8 text-white trans200 border border-transparent lg:hover:bg-white lg:hover:text-black lg:hover:border-black"
-              >
-                <h5>SEARCH</h5>
+            <a href="">
+              <button class="btn-flipdown black w-full py-3" data-aos="fade-up">
+                SEARCH
+                <div class="front">
+                  <h5 class="tracking-wide">SEARCH</h5>
+                </div>
+                <div class="back">
+                  <h5 class="tracking-wide">SEARCH</h5>
+                </div>
               </button>
-            </div>
+            </a>
           </form>
 
           <!-- Subcategories -->
@@ -506,9 +508,9 @@
 
           <div class="flex flex-wrap mb-6">
             <div
-              class="w-auto h-7.5 flex justify-between items-center bg-white border border-bdlight px-3 mb-3 mr-3 md:mr-4"
+              class="filter-tag w-auto h-7.5 flex justify-between items-center bg-white border border-bdlight px-3 mb-3 mr-3 md:mr-4"
             >
-              <div class="text-xs font-light leading-5 mr-6">WOVEN</div>
+              <div class="text-sm font-light leading-5 mr-6">WOVEN</div>
               <a href="javascript:;">
                 <div class="w-3">
                   <img
@@ -521,9 +523,9 @@
             </div>
 
             <div
-              class="w-auto h-7.5 flex justify-between items-center bg-white border border-bdlight px-3 mb-3 mr-3 md:mr-4"
+              class="filter-tag w-auto h-7.5 flex justify-between items-center bg-white border border-bdlight px-3 mb-3 mr-3 md:mr-4"
             >
-              <div class="text-xs font-light leading-5 mr-6">
+              <div class="text-sm font-light leading-5 mr-6">
                 Weight：100g~104g
               </div>
               <a href="javascript:;">
@@ -538,9 +540,9 @@
             </div>
 
             <div
-              class="w-auto h-7.5 flex justify-between items-center bg-white border border-bdlight px-3 mb-3 mr-3 md:mr-4"
+              class="filter-tag w-auto h-7.5 flex justify-between items-center bg-white border border-bdlight px-3 mb-3 mr-3 md:mr-4"
             >
-              <div class="text-xs font-light leading-5 mr-6">
+              <div class="text-sm font-light leading-5 mr-6">
                 Subcategories-1
               </div>
               <a href="javascript:;">

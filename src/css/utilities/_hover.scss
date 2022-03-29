@@ -252,6 +252,35 @@ svg.inside-icon {
   transform: scale(2);
 }
 
+// filter tag
+.filter-tag {
+  cursor: pointer;
+}
+
+.filter-tag img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.filter-tag:hover {
+  border: 1.5px solid #333333;
+  transition: all 0.3s ease;
+}
+
+.filter-tag:hover > div {
+  transition: all 0.3s ease;
+  text-shadow: 0.3px 0.3px 0px #333333, 0.3px 0.3px 0px #333333;
+}
+
+.filter-tag:hover.filter-tag img {
+  transform: rotate(360deg);
+}
+
+// inquiry close hover
+.inquiry-hover:hover.inquiry-hover img {
+  transform: scale(0.75) rotate(360deg);
+  transition: all 0.5s ease-in-out;
+}
+
 // ========== media ==========
 @media only screen and (max-width: 767px) {
   .trend h3,
