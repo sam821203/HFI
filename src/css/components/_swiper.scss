@@ -74,6 +74,11 @@
   align-items: center;
 }
 
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -88,13 +93,12 @@
   margin-right: auto;
 }
 
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
+.swiper-wrapper {
+  height: auto;
 }
 
 .mySwiper2 {
-  height: 80%;
+  height: auto;
   width: 100%;
 }
 

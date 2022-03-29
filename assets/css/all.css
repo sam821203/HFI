@@ -31217,6 +31217,11 @@ svg.inside-icon {
   align-items: center;
 }
 
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -31231,13 +31236,12 @@ svg.inside-icon {
   margin-right: auto;
 }
 
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
+.swiper-wrapper {
+  height: auto;
 }
 
 .mySwiper2 {
-  height: 80%;
+  height: auto;
   width: 100%;
 }
 
@@ -31638,7 +31642,7 @@ select:required:invalid {
 }
 
 @media only screen and (max-width: 767px) {
-  .trend-tab.selected::after {
+  .trend-tab .trend-title.selected::after {
     height: 0px;
   }
 
@@ -31656,24 +31660,28 @@ select:required:invalid {
     cursor: pointer;
   }
 
-  .trend-tab::after,
-  .trend-tab.selected::after {
+  .trend-tab .trend-title::after,
+  .trend-tab .trend-title.selected::after {
     content: "";
     width: 1px;
     background-color: white;
     position: absolute;
     top: 40px;
-    left: 32%;
+    left: 50%;
     -ms-transform: translateX(-50%);
         transform: translateX(-50%);
     transition: all 0.3s ease;
   }
 
-  .trend-tab::after {
+  .trend-tab .trend-title::after {
     height: 0px;
   }
 
-  .trend-tab.selected::after {
+  .trend-tab .trend-title.selected {
+    text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
+  }
+
+  .trend-tab .trend-title.selected::after {
     height: 48px;
   }
 
@@ -31682,18 +31690,9 @@ select:required:invalid {
     transition: all 0.3s ease;
   }
 
-  .trend-tab:hover.trend-tab::after {
+  .trend-tab:hover .trend-title::after {
     height: 48px;
   }
-}
-
-.trend-content div.trend-item {
-  display: none;
-}
-
-.trend-content div.trend-item:first-child {
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /* ==========

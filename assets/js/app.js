@@ -118,15 +118,15 @@ function menuBarToggle() {
 }
 
 // trend tab
-function trendSwitchTab() {
-    var switchTab = function switchTab() {
-        $(this).addClass("selected").siblings().removeClass("selected");
-        $(".trend-content > .trend-item").css("display", "flex").hide();
-        $($(this).data("value")).fadeIn();
-    };
+// function trendSwitchTab() {
+//   var switchTab = function () {
+//     $(this).addClass("selected").siblings().removeClass("selected");
+//     $(".trend-content > .trend-item").css("display", "flex").hide();
+//     $($(this).data("value")).fadeIn();
+//   };
 
-    $("body").on("click", ".trend-list ul li", switchTab);
-}
+//   $("body").on("click", ".trend-list ul li", switchTab);
+// }
 
 $(function () {
     productToggle();
@@ -138,7 +138,7 @@ $(function () {
     hoverBackground();
     scrollHeaderWhite();
     menuBarToggle();
-    trendSwitchTab();
+    // trendSwitchTab();
 });
 
 AOS.init({
