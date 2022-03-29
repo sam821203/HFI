@@ -229,7 +229,7 @@ svg.inside-icon {
   transition: filter 150ms ease, transform 200ms linear;
 }
 
-.hoverbg-items:hover :is(h3, p, .learn-more) {
+.hoverbg-items:hover :is(h2, p, .plus-icon) {
   transform: none;
 }
 
@@ -239,7 +239,7 @@ svg.inside-icon {
 }
 
 .hoverbg-items:hover p,
-.hoverbg-items:hover .learn-more {
+.hoverbg-items:hover .plus-icon {
   opacity: 1;
 }
 
@@ -292,7 +292,7 @@ svg.inside-icon {
     pointer-events: none;
   }
 
-  .hoverbg-items h3 {
+  .hoverbg-items h2 {
     transform: translateY(0px);
   }
 
@@ -301,7 +301,7 @@ svg.inside-icon {
     transform: translateY(0px);
   }
 
-  .hoverbg-items .learn-more {
+  .hoverbg-items .plus-icon {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -356,7 +356,7 @@ svg.inside-icon {
     transition: 200ms opacity linear;
   }
 
-  .hoverbg-items h3 {
+  .hoverbg-items h2 {
     transform: translateY(80px);
     transition: 250ms transform ease;
   }
@@ -367,7 +367,7 @@ svg.inside-icon {
     transform: translateY(60px);
   }
 
-  .hoverbg-items .learn-more {
+  .hoverbg-items .plus-icon {
     opacity: 0;
     transition: 250ms opacity linear, 250ms transform ease-in-out;
     transform: translateY(80px);

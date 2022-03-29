@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="24" viewBox="0 0 25 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="25" height="24" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_10612" data-name="Rectangle 10612" width="25" height="24" transform="translate(-0.4 0.48)" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_10611" data-name="Rectangle 10611" width="20.877" height="20.877" transform="translate(0 0)" fill="none" stroke="#000" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_2" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
+    <g transform="translate(2109 -1169)">
+      <g id="Mask_Group_711" data-name="Mask Group 711" transform="translate(-2108.6 1168.52)" clip-path="url(#clip-path-2)">
+        <g id="Mask_Group_710" data-name="Mask Group 710" transform="translate(0.979 2.088)" clip-path="url(#clip-path-3)">
+          <g id="Group_9156" data-name="Group 9156" transform="translate(-0.061 -0.062)">
+            <g id="Group_9155" data-name="Group 9155" transform="translate(0 0)">
+              <g id="Group_9154" data-name="Group 9154" transform="translate(0 0)">
+                <g id="Ellipse_332" data-name="Ellipse 332" fill="none" stroke="#000" stroke-width="1.5">
+                  <circle cx="8.512" cy="8.512" r="8.512" stroke="none"/>
+                  <circle cx="8.512" cy="8.512" r="7.762" fill="none"/>
+                </g>
+                <line id="Line_243" data-name="Line 243" x2="4.795" y2="4.171" transform="translate(16.484 17.023)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

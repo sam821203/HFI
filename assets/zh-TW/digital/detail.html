@@ -47,7 +47,7 @@
       </a>
 
       <!-- first menu icon -->
-      <a href="../member/inquirylist.html">
+      <a href="../inquiry/inquiry.html">
         <div class="w-12 icon-mr relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@
         </div></a
       >
 
-      <a href="../home/login.html">
+      <a href="../member/inquirylist.html">
         <div class="w-11 relative">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +300,7 @@
     <main>
       <section
         style="background-image: url(../../img/inquiry_bg.jpg)"
-        class="bg-cover w-full h-digitalmob lg:h-digitaldes bg-no-repeat mb-20"
+        class="bg-cover w-full h-digitalmob lg:h-screen bg-no-repeat mb-20"
       >
         <!-- <div
           class="flex lfex-wrap h-544 g-5 mt-25 mb-5 px-5 md:px-12.5 xl:mb-25 xxl:px-55"
@@ -364,7 +364,7 @@
         </div> -->
 
         <div
-          class="px-5 md:px-12.5 xxl:px-55 h-544 grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 xl:mb-25"
+          class="max-w-1000px h-544 px-5 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 lg:px-0 xl:mb-25"
         >
           <div
             class="col-span-1 lg:col-span-7 xxl:col-span-5 mt-5 md:mt-45 mr-0 md:mr-5 xxl:mr-10"
@@ -420,34 +420,42 @@
             class="col-span-1 lg:col-span-5 xxl:col-span-7 w-full h-full mt-5 md:mt-45"
           >
             <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 font-medium">Item No：</div>
-              <div class="w-2/3 md:w-3/4 font-normal truncate">
+              <div class="w-1/3 md:w-1/4 text-md font-medium">Item No：</div>
+              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
                 HFI-REPS-747
               </div>
             </div>
             <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 font-medium">Composition：</div>
-              <div class="w-2/3 md:w-3/4 font-normal truncate">
+              <div class="w-1/3 md:w-1/4 text-md font-medium">
+                Composition：
+              </div>
+              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
                 90% Recycled Polyester 10%Spandex
               </div>
             </div>
             <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 font-medium">Weave：</div>
-              <div class="w-2/3 md:w-3/4 font-normal truncate">
+              <div class="w-1/3 md:w-1/4 text-md font-medium">Weave：</div>
+              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
                 Single Jersey
               </div>
             </div>
             <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 font-medium">Width：</div>
-              <div class="w-2/3 md:w-3/4 font-normal truncate">61 g</div>
+              <div class="w-1/3 md:w-1/4 text-md font-medium">Width：</div>
+              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+                61 g
+              </div>
             </div>
             <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 font-medium">Weight：</div>
-              <div class="w-2/3 md:w-3/4 font-normal truncate">205 g/m2</div>
+              <div class="w-1/3 md:w-1/4 text-md font-medium">Weight：</div>
+              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+                205 g/m2
+              </div>
             </div>
             <div class="flex py-6 border-b border-bdlight mb-14">
-              <div class="w-1/3 md:w-1/4 font-medium">Finish：</div>
-              <div class="w-2/3 md:w-3/4 font-normal truncate">Wicking</div>
+              <div class="w-1/3 md:w-1/4 text-md font-medium">Finish：</div>
+              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+                Wicking
+              </div>
             </div>
 
             <div class="flex justify-between gap-5">
@@ -468,7 +476,7 @@
         </div>
       </section>
 
-      <section class="px-5 md:px-12.5 xxl:px-55 mb-12.5 md:mb-25 mt-40">
+      <section class="max-w-1000px px-5 mx-auto mb-12.5 mt-40 md:mb-25 lg:px-0">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-15">
           <div class="col-span-1 lg:col-span-7 xxl:col-span-5">
             <div class="product-hall w-full">
@@ -541,22 +549,28 @@
       </section>
     </main>
 <!-- start footer.html-->
-<footer
-  class="block md:flex justify-between items-center w-full h-60 md:h-footer bg-black px-5 md:px-20 py-6 md:py-4"
->
-  <div class="flex items-center pb-8 md:pb-0">
-    <div class="text-sm text-white">
-      12F, No.420, Fuxing N. Rd.,Taipei 104462, Taiwan<br />TEL:
-      +886-2-2501-2598<br />service@hungs.com.tw
+<footer class="w-full h-60 bg-black md:h-footer">
+  <div
+    class="block justify-between items-center max-w-1000px mx-auto px-5 py-6 md:flex md:py-4"
+  >
+    <div class="flex items-center pb-8 md:pb-0">
+      <div class="text-base text-white">
+        12F, No.420, Fuxing N. Rd.,Taipei 104462, Taiwan<br />TEL:
+        +886-2-2501-2598<br />service@hungs.com.tw
+      </div>
     </div>
-  </div>
 
-  <div class="flex flex-col items-start md:items-end">
-    <div class="w-40 mb-3">
-      <img src="../../img/images/footer_img.jpg" alt="" class="logo-contain" />
-    </div>
-    <div class="text-xs text-white">
-      Copyright © 2022 HUNG`S FORTUNE INTERNATIONAL All rights reserved.
+    <div class="flex flex-col items-start md:items-end">
+      <div class="w-40 mb-3">
+        <img
+          src="../../img/images/footer_img.jpg"
+          alt=""
+          class="logo-contain"
+        />
+      </div>
+      <div class="text-sm text-white">
+        Copyright © 2022 HUNG`S FORTUNE INTERNATIONAL All rights reserved.
+      </div>
     </div>
   </div>
 </footer>
