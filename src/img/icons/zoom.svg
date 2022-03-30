@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_10561" data-name="Rectangle 10561" width="53" height="53" transform="translate(0.412 0.389)" fill="#fff" stroke="#feffff" stroke-width="0.5"/>
+    </clipPath>
+    <filter id="Path_23807" x="-5.019" y="-4.901" width="62.929" height="62.74" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9161" data-name="Group 9161" transform="translate(-4918 -3582)">
+    <g id="Group_8349" data-name="Group 8349" transform="translate(4917.588 3581.611)" clip-path="url(#clip-path)">
+      <g transform="matrix(1, 0, 0, 1, 0.41, 0.39)" filter="url(#Path_23807)">
+        <path id="Path_23807-2" data-name="Path 23807" d="M31.454,28.414l-5.543-5.354a1.669,1.669,0,0,0-2.171-.1L22,21.224a12.686,12.686,0,1,0-.779.779l1.735,1.735a1.606,1.606,0,0,0,.1,2.173L28.6,31.266a1.626,1.626,0,0,0,2.294,0l.559-.559a1.622,1.622,0,0,0,0-2.293M1.1,12.669A11.567,11.567,0,1,1,12.669,24.236,11.581,11.581,0,0,1,1.1,12.669m29.573,17.26-.559.559a.522.522,0,0,1-.736,0l-5.542-5.356a.52.52,0,0,1,0-.735l.268-.267s.009-.006.013-.009.006-.009.009-.013l.268-.268a.52.52,0,0,1,.735,0l5.542,5.354a.521.521,0,0,1,0,.736" transform="translate(10.48 10.6)" fill="#fff" stroke="#feffff" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_8348" data-name="Group 8348" transform="translate(4935.604 3600.202)">
+      <line id="Line_237" data-name="Line 237" x2="10.613" transform="translate(0 5.307)" fill="none" stroke="#feffff" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_238" data-name="Line 238" x2="10.613" transform="translate(5.307 0) rotate(90)" fill="none" stroke="#feffff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
