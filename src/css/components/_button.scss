@@ -19,9 +19,9 @@
   height: 100%;
 }
 
-.btn-flipdown.black .front {
-  background: black;
-  color: white;
+.btn-flipdown.white .front,
+.btn-flipdown.black .front,
+.btn-flipdown.secondary .front {
   transition: 0.3s;
   transform-origin: center center calc(40px / -2);
 }
@@ -29,13 +29,21 @@
 .btn-flipdown.white .front {
   background: white;
   color: black;
-  transition: 0.3s;
-  transform-origin: center center calc(40px / -2);
 }
 
-.btn-flipdown.black .back {
-  color: black;
+.btn-flipdown.black .front {
   background: black;
+  color: white;
+}
+
+.btn-flipdown.secondary .front {
+  background: #c98900;
+  color: white;
+}
+
+.btn-flipdown.white .back,
+.btn-flipdown.black .back,
+.btn-flipdown.secondary .back {
   transform: rotateX(88deg);
   transform-origin: center center calc(40px / -2);
   transition: 0.3s;
@@ -44,9 +52,35 @@
 .btn-flipdown.white .back {
   color: black;
   background: white;
-  transform: rotateX(88deg);
-  transform-origin: center center calc(40px / -2);
-  transition: 0.3s;
+}
+
+.btn-flipdown.black .back {
+  color: black;
+  background: black;
+}
+
+.btn-flipdown.secondary .back {
+  color: white;
+  background: #c98900;
+}
+
+.btn-flipdown.white .back img,
+.btn-flipdown.black .back img,
+.btn-flipdown.secondary .back img,
+.btn-flipdown.white .back div,
+.btn-flipdown.black .back div,
+.btn-flipdown.secondary .back div {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.btn-flipdown.white:hover .back img,
+.btn-flipdown.black:hover .back img,
+.btn-flipdown.secondary:hover .back img,
+.btn-flipdown.white:hover .back div,
+.btn-flipdown.black:hover .back div,
+.btn-flipdown.secondary:hover .back div {
+  opacity: 1;
 }
 
 .btn-flipdown:hover .front {

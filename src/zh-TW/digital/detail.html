@@ -6,23 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detail</title>
     <link rel="stylesheet" href="../../css/all.css" />
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        height: auto;
+      }
+
+      .mySwiper2 {
+        height: auto;
+        width: 100%;
+      }
+
+      .swiper-wrapper {
+        height: auto;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        border: 5px solid black;
+      }
+    </style>
   </head>
   <body>
     <!-- @@include ../include/header-black.html -->
-    <main>
+    <main class="bg-white">
       <section
         style="background-image: url(../../img/inquiry_bg.jpg)"
-        class="relative bg-cover w-full h-digitalmob lg:h-screen bg-no-repeat mb-20"
+        class="section-after relative bg-cover w-full h-full bg-no-repeat pt-45 mb-12.5 md:h-screen md:mb-25"
       >
-        <div class="position-center max-w-1000px mt-25 mb-5 mx-auto xl:mb-25">
-          <div class="flex flex-wrap w-full g-5">
-            <div class="md:w-1/2">
+        <div class="w-full px-5 mb-5 mx-auto md:max-w-1000px xl:px-0 xl:mb-25">
+          <div class="flex flex-wrap g-5 md:g-12.5">
+            <div class="w-full md:w-1/2">
               <div
                 style="
                   --swiper-navigation-color: #fff;
                   --swiper-pagination-color: #fff;
                 "
-                class="swiper-container mySwiper2"
+                class="swiper-container mySwiper2 relative"
               >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -46,274 +124,265 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <img src="../../img/images/digital_big_5.jpg" />
+                    <img src="../../img/images/digital_small_5.jpg" />
                   </div>
+                </div>
+
+                <div class="absolute bottom-3 right-3 z-20 cursor-pointer">
+                  <img src="../../img/icons/zoom.png" alt="">
                 </div>
               </div>
 
-              <div thumbsSlider="" class="swiper mySwiper overflow-hidden">
+              <div thumbsSlider="" class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="../../img/images/digital_big_1.jpg" />
+                    <img src="../../img/images/digital_small_1.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../../img/images/digital_big_2.jpg" />
+                    <img src="../../img/images/digital_small_2.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../../img/images/digital_big_3.jpg" />
+                    <img src="../../img/images/digital_small_3.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../../img/images/digital_big_4.jpg" />
+                    <img src="../../img/images/digital_small_4.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../../img/images/digital_big_5.jpg" />
+                    <img src="../../img/images/digital_small_5.jpg" />
                   </div>
                 </div>
               </div>
             </div>
-            <div class="md:w-1/2">
-              <div class="flex py-6 border-b border-bdlight">
-                <div class="w-1/3 md:w-1/4 text-md font-medium">Item No：</div>
-                <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+
+            <div class="w-full md:w-1/2">
+              <div class="flex pb-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">Item No：</div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">
                   HFI-REPS-747
                 </div>
               </div>
-              <div class="flex py-6 border-b border-bdlight">
-                <div class="w-1/3 md:w-1/4 text-md font-medium">
+              <div class="flex py-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">
                   Composition：
                 </div>
-                <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                  90% Recycled Polyester 10%Spandex
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">
+                  90%Recycled Polyester 10%Spandex
                 </div>
               </div>
-              <div class="flex py-6 border-b border-bdlight">
-                <div class="w-1/3 md:w-1/4 text-md font-medium">Weave：</div>
-                <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+              <div class="flex py-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">
+                  Construction：
+                </div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">
                   Single Jersey
                 </div>
               </div>
-              <div class="flex py-6 border-b border-bdlight">
-                <div class="w-1/3 md:w-1/4 text-md font-medium">Width：</div>
-                <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+              <div class="flex py-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">Width：</div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">
                   61 g
                 </div>
               </div>
-              <div class="flex py-6 border-b border-bdlight">
-                <div class="w-1/3 md:w-1/4 text-md font-medium">Weight：</div>
-                <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+              <div class="flex py-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">Weight：</div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">
                   205 g/m2
                 </div>
               </div>
-              <div class="flex py-6 border-b border-bdlight mb-14">
-                <div class="w-1/3 md:w-1/4 text-md font-medium">Finish：</div>
-                <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
+              <div class="flex py-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">Finish：</div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">
                   Wicking
                 </div>
               </div>
+              <div class="flex py-5 border-b border-bdlight">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">Function：</div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">-</div>
+              </div>
+              <div class="flex py-5 border-b border-bdlight mb-5">
+                <div class="w-1/3 md:w-1/4 text-base font-medium md:text-md">Remark：</div>
+                <div class="w-2/3 md:w-3/4 text-base font-normal truncate md:text-md">-</div>
+              </div>
 
-              <div class="flex justify-between gap-5">
-                <div class="w-1/4">
+              <div class="flex justify-between g-5">
+                <div class="w-1/3">
                   <img
                     src="../../img/images/brand_1.png"
                     alt=""
                     class="logo-contain"
                   />
                 </div>
-                <div class="w-1/4">
+                <div class="w-1/3">
                   <img src="../../img/images/brand_2.png" alt="" />
                 </div>
-                <div class="w-1/4"></div>
-                <div class="w-1/4"></div>
+                <div class="w-1/3"></div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- <div
-          class="max-w-1000px h-544 px-5 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 lg:px-0 xl:mb-25"
-        >
-          <div
-            class="col-span-1 lg:col-span-6 mt-5 md:mt-45 mr-0 md:mr-5 xxl:mr-10"
-          >
-            <div class="mb-5 w-full">
-              <img
-                src="../../img/images/digital_big_1.jpg"
-                alt=""
-                class="object-cover w-full h-full"
-              />
-            </div>
-
-            <div class="grid grid-cols-3 md:grid-cols-5 gap-5">
-              <div class="w-full">
+      <section class="px-5 pb-12.5 md:pb-25 lg:px-0">
+        <div class="max-w-1000px mx-auto">
+          <div class="flex flex-wrap items-center g-4 md:g-15">
+            <div class="w-full md:w-1/2">
+              <div class="product-hall w-full">
                 <img
-                  src="../../img/images/digital_small_1.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-full">
-                <img
-                  src="../../img/images/digital_small_2.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-full">
-                <img
-                  src="../../img/images/digital_small_3.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-full">
-                <img
-                  src="../../img/images/digital_small_4.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-full">
-                <img
-                  src="../../img/images/digital_small_1.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-span-1 lg:col-span-6 w-full h-full mt-5 md:mt-45">
-            <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 text-md font-medium">Item No：</div>
-              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                HFI-REPS-747
-              </div>
-            </div>
-            <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 text-md font-medium">
-                Composition：
-              </div>
-              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                90% Recycled Polyester 10%Spandex
-              </div>
-            </div>
-            <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 text-md font-medium">Weave：</div>
-              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                Single Jersey
-              </div>
-            </div>
-            <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 text-md font-medium">Width：</div>
-              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                61 g
-              </div>
-            </div>
-            <div class="flex py-6 border-b border-bdlight">
-              <div class="w-1/3 md:w-1/4 text-md font-medium">Weight：</div>
-              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                205 g/m2
-              </div>
-            </div>
-            <div class="flex py-6 border-b border-bdlight mb-14">
-              <div class="w-1/3 md:w-1/4 text-md font-medium">Finish：</div>
-              <div class="w-2/3 md:w-3/4 text-md font-normal truncate">
-                Wicking
-              </div>
-            </div>
-
-            <div class="flex justify-between gap-5">
-              <div class="w-1/4">
-                <img
-                  src="../../img/images/brand_1.png"
+                  src="../../img/images/pro_color_1.jpg"
                   alt=""
                   class="logo-contain"
                 />
               </div>
-              <div class="w-1/4">
-                <img src="../../img/images/brand_2.png" alt="" />
-              </div>
-              <div class="w-1/4"></div>
-              <div class="w-1/4"></div>
             </div>
-          </div>
-        </div> -->
-      </section>
-
-      <!-- <section class="max-w-1000px px-5 mx-auto mb-12.5 mt-40 md:mb-25 lg:px-0">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-15">
-          <div class="col-span-1 lg:col-span-7 xxl:col-span-5">
-            <div class="product-hall w-full">
-              <img
-                src="../../img/images/pro_color_1.jpg"
-                alt=""
-                class="logo-contain"
-              />
-            </div>
-          </div>
-          <div class="col-span-1 lg:col-span-5 xxl:col-span-7">
-            <div class="text-3xl text-primary mb-4 md:mb-8">Product Colors</div>
-            <div class="flex mb-6">
-              <div class="product-color w-24 mr-5">
-                <img
-                  src="../../img/images/color_1.jpg"
-                  alt=""
-                  class="trans200"
-                />
+            
+            <div class="w-full md:w-1/2">
+              <div class="text-7.5 text-primary mb-1 md:mb-4">
+                Product Colors
               </div>
-              <div class="product-color w-24 mr-5">
-                <img
-                  src="../../img/images/color_2.jpg"
-                  alt=""
-                  class="trans200"
-                />
-              </div>
-              <div class="product-color w-24 mr-5">
-                <img
-                  src="../../img/images/color_3.jpg"
-                  alt=""
-                  class="trans200"
-                />
-              </div>
-            </div>
-
-            <div class="flex justify-between md:justify-start gap-5">
-              <a href="" class="w-full">
-                <div
-                  class="flex justify-center items-center w-full md:max-w-50 py-3 px-8 bg-secondary mr-10"
-                >
-                  <div class="w-5 icon-mr">
-                    <img
-                      src="../../img/icons/like_w.svg"
-                      alt=""
-                      class="logo-contain"
-                    />
+              <div class="flex mb-8 md:mb-6">
+                <div class="product-color w-24 mr-5 trans200 md:cursor-pointer md:hover:opacity-80">
+                  <img
+                    src="../../img/images/color_1.jpg"
+                    alt=""
+                    class="trans200"
+                  />
+                  <div class="product-big-color hidden">
+                    <img src="../../img/images/pro_color_1.jpg" alt="">
                   </div>
-                  <h5 class="text-white whitespace-no-wrap">favourite</h5>
                 </div>
-              </a>
-
-              <a href="" class="w-full">
-                <div
-                  class="flex justify-center items-center w-full md:max-w-50 py-3 px-8 bg-black"
-                >
-                  <div class="w-3 icon-mr scale-50">
-                    <img
-                      src="../../img/icons/doc_w.svg"
-                      alt=""
-                      class="logo-contain"
-                    />
+                <div class="product-color w-24 mr-5 trans200 md:cursor-pointer md:hover:opacity-80">
+                  <img
+                    src="../../img/images/color_2.jpg"
+                    alt=""
+                    class="trans200"
+                  />
+                  <div class="product-big-color hidden">
+                    <img src="../../img/images/pro_color_2.jpg" alt="">
                   </div>
-                  <h5 class="text-white whitespace-no-wrap">Add an Inquiry</h5>
                 </div>
-              </a>
-            </div>
+                <div class="product-color w-24 mr-5 trans200 md:cursor-pointer md:hover:opacity-80">
+                  <img
+                    src="../../img/images/color_3.jpg"
+                    alt=""
+                    class="trans200"
+                  />
+                  <div class="product-big-color hidden">
+                    <img src="../../img/images/pro_color_3.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="block justify-between g-0 md:flex md:justify-start md:g-5">
+                <a href="../member/myfavourite.html" 
+                  >
+                  <button class="btn-flipdown secondary w-full px-14 py-2.5 mb-4 pointer-events-none md:max-w-200px md:mb-0 md:pointer-events-auto">
+                    Favourite
+                    <div class="front">
+                      <div class="w-4 icon-mr">
+                        <img
+                          src="../../img/icons/like_w.svg"
+                          alt=""
+                          class="logo-contain"
+                        />
+                      </div>
+                      <div class="text-base tracking-wide">Favourite</div>
+                    </div>
+                    <div class="back">
+                      <div class="w-4 icon-mr">
+                        <img
+                          src="../../img/icons/like_w.svg"
+                          alt=""
+                          class="logo-contain"
+                        />
+                      </div>
+                      <div class="text-base tracking-wide">Favourite</div>
+                    </div>
+                  </button>
+                </a>
+
+
+                <a href="../inquiry/inquiry.html" 
+                  >
+                  <button class="btn-flipdown black w-full  px-10 py-2.5 pointer-events-none md:max-w-200px md:pointer-events-auto">
+                    Add an Inquiry
+                    <div class="front">
+                      <div class="w-4 icon-mr">
+                        <img
+                          src="../../img/icons/doc_w.svg"
+                          alt=""
+                          class="logo-contain"
+                        />
+                      </div>
+                      <div class="text-base tracking-wide">Add an Inquiry</div>
+                    </div>
+                    <div class="back">
+                      <div class="w-4 icon-mr">
+                        <img
+                          src="../../img/icons/doc_w.svg"
+                          alt=""
+                          class="logo-contain"
+                        />
+                      </div>
+                      <div class="text-base tracking-wide">Add an Inquiry</div>
+                    </div>
+                  </button>
+                </a>
+              </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- @@include ../include/footer.html -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 16,
+        slidesPerView: 5,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 16,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+      // scroll header
+      function scrollHeaderWhite() {
+        $(window).on("scroll", function () {
+          var scrollTop = $(this).scrollTop();
+          if (scrollTop > 0) {
+            $(".site-header").addClass("is-active");
+          } else {
+            $(".site-header").removeClass("is-active");
+          }
+        });
+      }
+
+      // Change image color
+      function imgColorChange() {
+        var proColor = function () {
+          const bigColor = $(this).next(".product-big-color");
+          const imgSrc = bigColor.children().attr("src");
+          $(".product-hall img").attr("src", imgSrc);
+        };
+        $("body").on("click", ".product-color img", proColor);
+      }
+
+      $(function () {
+        scrollHeaderWhite();
+        imgColorChange();
+      });
+    </script>
     <script src="../../js/vendor.js"></script>
-    <script src="../../js/app.js"></script>
+    <!-- <script src="../../js/app.js"></script> -->
   </body>
 </html>

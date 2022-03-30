@@ -67,15 +67,6 @@ function detailChange() {
   $("body").on("click", ".small-img img", detailImg);
 }
 
-// Change image color
-function imgColorChange() {
-  var proColor = function () {
-    const imgSrc = $(this).attr("src");
-    $(".product-hall img").attr("src", imgSrc);
-  };
-  $("body").on("click", ".product-color img", proColor);
-}
-
 // Change image on hover
 function hoverBackground() {
   var hoverBgEnter = function () {
@@ -87,7 +78,7 @@ function hoverBackground() {
   $("body").on("mouseenter", ".hoverbg-items", hoverBgEnter);
 }
 
-// scroll header white
+// scroll header
 function scrollHeaderWhite() {
   $(window).on("scroll", function () {
     var scrollTop = $(this).scrollTop();
@@ -132,7 +123,7 @@ $(function () {
   listToggle();
   heroSwiper();
   detailChange();
-  imgColorChange();
+  // imgColorChange();
   hoverBackground();
   scrollHeaderWhite();
   menuBarToggle();
