@@ -3,7 +3,8 @@
 }
 
 // product grayscale hover
-.product {
+.product,
+.hero-product {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,8 +16,23 @@
   overflow: hidden;
 }
 
+.product img,
+.hero-product img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: filter 200ms ease, transform 200ms linear;
+}
+
 .product::before,
-.product::after {
+.product::after,
+.hero-product::before,
+.hero-product::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -25,7 +41,8 @@
   left: 0;
 }
 
-.product::before {
+.product::before,
+.hero-product::before {
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5) 0,
@@ -35,7 +52,8 @@
   transition: 300ms opacity linear;
 }
 
-.product::after {
+.product::after,
+.hero-product::after {
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.75) 0,
@@ -45,7 +63,8 @@
   transition: 300ms opacity linear;
 }
 
-.product > * {
+.product > *,
+.hero-product > * {
   z-index: 1;
 }
 
@@ -53,28 +72,35 @@
   filter: grayscale(0);
 }
 
-.product h3 {
+.product h3,
+.hero-product h3 {
   transition: 350ms transform ease;
 }
 
-.product h6 {
+.product h6,
+.hero-product h6 {
   transition: 350ms opacity linear, 350ms transform ease-in-out;
 }
 
-.product:hover :is(h3, h6) {
+.product:hover :is(h3, h6),
+.hero-product:hover :is(h3, h6) {
   transform: none;
 }
 
 .product:hover::after,
-.product:hover::before {
+.product:hover::before,
+.hero-product:hover::after,
+.hero-product:hover::before {
   opacity: 0.7;
 }
 
-.product:hover h6 {
+.product:hover h6,
+.hero-product:hover h6 {
   opacity: 1;
 }
 
-a .product:hover img {
+a .product:hover img,
+a .hero-product:hover img {
   filter: grayscale(0);
   transform: scale(1.05) rotate(1deg);
 }
@@ -250,7 +276,7 @@ svg.inside-icon {
 }
 
 .filter-tag:hover {
-  border: 1.5px solid #333333;
+  border-color: #333333;
   transition: all 0.3s ease;
 }
 
@@ -342,16 +368,8 @@ svg.inside-icon {
     transform: translateY(0px);
   }
 
-  .product img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
+  .hero-product img {
     filter: grayscale(0);
-    transition: filter 200ms ease, transform 200ms linear;
   }
 }
 
@@ -419,17 +437,5 @@ svg.inside-icon {
     opacity: 0;
     transition: 250ms opacity linear, 250ms transform ease-in-out;
     transform: translateY(80px);
-  }
-
-  .product img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    filter: grayscale(1);
-    transition: filter 200ms ease, transform 200ms linear;
   }
 }

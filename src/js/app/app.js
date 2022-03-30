@@ -76,6 +76,7 @@ function hoverBackground() {
   };
 
   $("body").on("mouseenter", ".hoverbg-items", hoverBgEnter);
+  $("body").on("mouseleave", ".hoverbg-items", hoverBgEnter);
 }
 
 // scroll header

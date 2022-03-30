@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        cursor: none;
+        overflow: hidden;
+      }
+      .pointer {
+        position: absolute;
+        height: 480px;
+        top: 100px;
+        width: 480px;
+        left: 50%;
+        pointer-events: none;
+      }
+
+      .pointer img {
+        width: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pointer">
+      <img
+        src="https://thumbs.gfycat.com/AmusingFriendlyBarasingha-size_restricted.gif"
+        class="gif"
+        alt=""
+      />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).mousemove(function (e) {
+        // $(".pointer").css({ left: e.pageX, top: e.pageY });
+        $(".pointer").position({ left: e.pageX, top: e.pageY });
+        $(".pointer").offset({
+          left: e.pageX,
+          top: e.pageY + 50,
+          // right: e.pageX,
+          // bottom: e.pageY + 20,
+        });
+      });
+    </script>
+  </body>
+</html>

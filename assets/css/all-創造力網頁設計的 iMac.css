@@ -31744,7 +31744,7 @@ svg.inside-icon {
 }
 
 .filter-tag:hover {
-  border-color: #333333;
+  border: 1.5px solid #333333;
   transition: all 0.3s ease;
 }
 
