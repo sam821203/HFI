@@ -1,23 +1,3 @@
-// hero section slide
-function heroSwiper() {
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".my-swiper-next",
-      prevEl: ".my-swiper-prev",
-    },
-  });
-}
-
 // more product toggle
 function productToggle() {
   $(".more-product").on("click", function () {
@@ -40,22 +20,6 @@ function listToggle() {
     $(this).toggleClass("list-active");
     $(this).siblings(".list-body").slideToggle();
   });
-}
-
-// pagination
-let count = 1;
-let countPage = document.getElementById("count");
-function plus() {
-  console.log("hi");
-  count++;
-  countPage.value = count;
-}
-function minus() {
-  if (count > 1) {
-    console.log("minus");
-    count--;
-    countPage.value = count;
-  }
 }
 
 // Change detail image
@@ -107,28 +71,67 @@ function menuBarToggle() {
   });
 }
 
-// trend tab
-// function trendSwitchTab() {
-//   var switchTab = function () {
-//     $(this).addClass("selected").siblings().removeClass("selected");
-//     $(".trend-content > .trend-item").css("display", "flex").hide();
-//     $($(this).data("value")).fadeIn();
-//   };
+// Change image color
+function imgColorChange() {
+  var proColor = function () {
+    const bigColor = $(this).next(".product-big-color");
+    const imgSrc = bigColor.children().attr("src");
+    $(".product-hall img").attr("src", imgSrc);
+  };
+  $("body").on("click", ".product-color img", proColor);
+}
 
-//   $("body").on("click", ".trend-list ul li", switchTab);
-// }
+function imgColorBorder() {
+  var switchBorder = function () {
+    $(this).addClass("selected").siblings().removeClass("selected");
+  };
+
+  $("body").on("click", ".product-color", switchBorder);
+}
+
+// mouse follow
+function mouseFollow() {
+  const cursor = document.querySelector(".cursor");
+  const speed = 0.25;
+  const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  const mouse = { x: pos.x, y: pos.y };
+  const xSet = gsap.quickSetter(cursor, "x", "px");
+  const ySet = gsap.quickSetter(cursor, "y", "px");
+
+  window.addEventListener("mousemove", (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  gsap.ticker.add(() => {
+    const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
+    pos.x += (mouse.x - pos.x) * dt;
+    pos.y += (mouse.y - pos.y) * dt;
+    xSet(pos.x);
+    ySet(pos.y);
+  });
+
+  $("[data-cursor]").on("mouseenter", function () {
+    $(cursor).removeClass("opacity-0");
+    $(cursor).addClass("opacity-100");
+  });
+  $("[data-cursor]").on("mouseleave", function () {
+    $(cursor).removeClass("opacity-100");
+    $(cursor).addClass("opacity-0");
+  });
+}
 
 $(function () {
   productToggle();
   categoryToggle();
   listToggle();
-  heroSwiper();
   detailChange();
-  // imgColorChange();
   hoverBackground();
   scrollHeaderWhite();
   menuBarToggle();
-  // trendSwitchTab();
+  imgColorChange();
+  imgColorBorder();
+  mouseFollow();
 });
 
 AOS.init({

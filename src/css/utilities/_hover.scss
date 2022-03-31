@@ -68,10 +68,6 @@
   z-index: 1;
 }
 
-.product-color img {
-  filter: grayscale(0);
-}
-
 .product h3,
 .hero-product h3 {
   transition: 350ms transform ease;
@@ -208,7 +204,6 @@ svg.inside-icon {
 }
 
 .hoverbg-items {
-  cursor: url("../../img/icons/More.svg"), auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,11 +277,10 @@ svg.inside-icon {
 
 .filter-tag:hover > div {
   transition: all 0.3s ease;
-  text-shadow: 0.3px 0.3px 0px #333333, 0.3px 0.3px 0px #333333;
 }
 
 .filter-tag:hover.filter-tag img {
-  transform: rotate(360deg);
+  transform: scale(0.75) rotate(360deg);
 }
 
 // inquiry close hover
@@ -299,7 +293,7 @@ svg.inside-icon {
 
 .inquiry-hover:hover.inquiry-hover img,
 .favourite-hover:hover.favourite-hover img {
-  transform: scale(0.75) rotate(360deg);
+  transform: scale(0.9) rotate(360deg);
   transition: all 0.5s ease-in-out;
 }
 
@@ -312,6 +306,14 @@ svg.inside-icon {
 .add-inquiry-hover:hover > div {
   margin-right: 16px;
   transition: all 0.3s ease;
+}
+
+.product-color img {
+  filter: grayscale(0);
+}
+
+.product-color.selected {
+  border: 5px solid #222222;
 }
 
 // ========== media ==========
@@ -402,7 +404,6 @@ svg.inside-icon {
   }
 
   .hoverbg-items {
-    cursor: url("../../img/icons/More.svg"), auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

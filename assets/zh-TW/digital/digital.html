@@ -289,11 +289,12 @@
       <section
         style="background-image: url(../../img/digilibrary_bg.jpg)"
         class="bg-cover w-full h-81.5 md:h-122.5 bg-center bg-no-repeat mb-20 md:mb-25 relative"
+        data-aos="fade-up"
       >
         <div
           class="w-full h-full flex flex-col justify-center items-center text-white"
         >
-          <h1 class="text-shadow mb-3">DIGITAL LIBRARY</h1>
+          <h1 class="text-shadow mb-3" data-aos="fade-up">DIGITAL LIBRARY</h1>
         </div>
 
         <div
@@ -309,7 +310,7 @@
                   type="text"
                   placeholder="Color Name / Material Content / Spec"
                   name="search"
-                  class="w-5/6 h-full pl-10 text-base rounded-l-none md:rounded-l-full"
+                  class="w-5/6 h-full pl-5 text-base rounded-l-none md:pl-10 md:rounded-l-full"
                 />
                 <button
                   class="w-1/6 flex justify-center items-center bg-secondary lg:hover:bg-primaryhover trans200 text-white rounded-r-none md:rounded-r-full md:hover:bg-secondaryhover"
@@ -338,6 +339,7 @@
 
       <section
         class="max-w-1000px flex flex-wrap px-5 mx-auto lg:px-0 xl:flex-no-wrap"
+        data-aos="fade"
       >
         <div class="w-full md:mr-0 xl:w-22% xl:mr-7">
           <!-- Category -->
@@ -376,11 +378,10 @@
               </div>
             </div>
 
-            <a
-              href="javascript:;"
-              class="pointer-events-none md:pointer-events-auto"
-            >
-              <button class="btn-flipdown black w-full py-3" data-aos="fade-up">
+            <a href="javascript:;">
+              <button
+                class="btn-flipdown black w-full py-3 mb-7.5 pointer-events-none lg:pointer-events-auto"
+              >
                 SEARCH
                 <div class="front">
                   <h5 class="tracking-wide">SEARCH</h5>
@@ -393,7 +394,7 @@
           </form>
 
           <!-- Subcategories -->
-          <ul>
+          <ul class="mb-4 lg:mb-0">
             <li data-aos="fade-up">
               <button
                 class="toggle-cat w-full flex justify-between items-center py-5 border-t border-bdlight"
@@ -498,7 +499,7 @@
           >
             <div class="digi-subtitle mb-0 md:mb-5">140 items in total</div>
             <a href="javascript:;" class="flex justify-center items-start">
-              <div class="w-4 icon-mr">
+              <div class="w-3 mr-0 md:w-4 md:mr-2.5">
                 <img
                   src="../../img/icons/bin.svg"
                   alt=""
@@ -819,7 +820,7 @@
 
           <!-- pagination -->
           <div class="flex justify-center items-center section-mb">
-            <a href="javascript:;" id="minus" class="flex" onclick="minus()">
+            <a href="javascript:;" id="minus" class="flex">
               <div class="w-2 icon-mr">
                 <img
                   src="../../img/icons/arrow_l.svg"
@@ -827,7 +828,6 @@
                   class="logo-contain"
                 />
               </div>
-
               <h5>PREV</h5>
             </a>
 
@@ -843,7 +843,7 @@
               <div class="font-Proxima">7</div>
             </div>
 
-            <a href="javascript:;" id="plus" class="flex" onclick="plus()">
+            <a href="javascript:;" id="plus" class="flex">
               <h5 class="icon-mr">NEXT</h5>
               <div class="w-2 icon-mr">
                 <img
@@ -858,18 +858,18 @@
       </section>
     </main>
 <!-- start footer.html-->
-<footer class="w-full h-60 bg-black md:h-footer">
+<footer class="w-full h-full bg-black md:h-footer">
   <div
-    class="block justify-between items-center max-w-1000px mx-auto px-0 py-6 md:flex md:py-4"
+    class="block justify-between items-center w-full mx-auto px-5 py-6 md:flex md:max-w-1000px md:py-4"
   >
-    <div class="flex items-center pb-8 mt-6 md:pb-0">
+    <div class="flex items-center pb-8 mt-0 md:pb-0 md:mt-6">
       <div class="text-base text-white">
         12F, No.420, Fuxing N. Rd.,Taipei 104462, Taiwan<br />TEL:
         +886-2-2501-2598<br />service@hungs.com.tw
       </div>
     </div>
 
-    <div class="flex flex-col items-start mt-6 md:items-end">
+    <div class="flex flex-col items-start mt-0 md:items-end md:mt-6">
       <div class="w-40 mb-3">
         <img
           src="../../img/images/footer_img.jpg"

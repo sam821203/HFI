@@ -26,6 +26,9 @@
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -43,10 +46,6 @@
 
   .trend-tab:hover {
     text-shadow: 0.5px 0.5px 0px #fff, 0.5px 0.5px 0px #fff;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
   }
 
   .trend-tab:hover .trend-title::after {

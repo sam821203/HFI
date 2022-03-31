@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="../../css/all.css" />
   </head>
   <body>
+    <header class="site-header fixed flex w-full">
+      <div class="relative top-42px left-50px flex justify-between w-full z-50">
+        <a href="../home/index.html" class="flex items-center">
+          <div class="w-20 md:w-logo mr-4">
+            <img src="../../img/logo.png" alt="" class="logo-contain" />
+          </div>
+        </a>
+      </div>
+    </header>
     <main>
       <section
         style="background-image: url(../../img/login_bg.jpg)"
@@ -43,7 +52,9 @@
               />
             </div>
             <a href="../home/index.html">
-              <button class="btn-flipdown white w-full px-14 py-4.5 md:w-auto">
+              <button
+                class="btn-flipdown white w-full px-14 py-4.5 pointer-events-none md:w-auto md:pointer-events-auto"
+              >
                 LOGIN
                 <div class="front">
                   <div class="tracking-wide text-black">LOGIN</div>

@@ -10,19 +10,23 @@
   <body>
     <!-- @@include ../include/header-white.html -->
     <main>
-      <section
-        style="background-image: url(../../img/trend_bg.jpg)"
-        class="hero-img relative w-full h-81.5 bg-cover bg-center bg-no-repeat mb-12.5 md:h-screen md:mb-25"
-      >
+      <section class="bg-black mb-12.5 -z-10 md:mb-25">
         <div
-          class="h-full flex justify-center items-center text-white px-5 lg:px-12.5"
-          data-aos="fade-up"
+          style="background-image: url(../../img/trend_bg.jpg)"
+          class="hero-img w-full h-81.5 bg-cover bg-center bg-no-repeat md:h-screen"
+          data-aos="fade"
+          data-aos-delay="500"
+        ></div>
+        <div
+          class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-81.5 flex justify-center items-center text-white px-5 z-10 md:h-screen lg:px-12.5"
         >
-          <h1 class="text-shadow z-30">TRENDS</h1>
+          <h1 class="text-shadow" data-aos="fade-up">TRENDS</h1>
           <div
-            class="trend-list flex position-middle-bottom bottom-4 md:bottom-2 w-full z-40 overflow-x-scroll md:overflow-visible"
+            class="trend-list fade-in flex absolute bottom-4 left-0 trans200 md:bottom-10 w-full overflow-x-scroll md:overflow-visible"
           >
-            <ul class="w-full flex justify-center items-center text-white">
+            <ul
+              class="w-full flex justify-start items-center px-5 text-white md:justify-center md:px-0"
+            >
               <a href="../trend/trend-all.html">
                 <li class="trend-tab flex justify-center items-center">
                   <div
@@ -62,21 +66,22 @@
               <a href="../trend/trend-market.html">
                 <li class="trend-tab flex items-center">
                   <div
-                    class="trend-title relative text-md font-thin whitespace-no-wrap md:text-xl"
+                    class="trend-title relative text-md font-thin whitespace-no-wrap md:pr-0 md:text-xl"
                   >
                     Market Application
                   </div>
-                  <div class="slash-0 hidden border-r-0 md:block"></div>
                 </li>
               </a>
+
+              <div class="block h-full pr-5 md:hidden"></div>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="trend-content px-5 md:px-11 xxl:px-55 mb-12.5 md:mb-25">
+      <section class="trend-content px-5 md:px-11 3xl:px-55 mb-12.5 md:mb-25">
         <div class="mb-12.5 md:mb-25">
-          <h2 class="mb-4 text-center md:mb-11">Highlight</h2>
+          <h2 class="mb-4 text-center md:mb-10 xl:mb-11">Highlight</h2>
           <div class="trend-item highlight flex-wrap g-8 md:flex xl:g-10">
             <div class="w-full md:w-1/3" data-aos="fade-up">
               <a href="../trend/trend-detail1.html" class="relative">
